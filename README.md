@@ -11,14 +11,11 @@ La construction de votre site consistera à agencer à votre convenance des modu
 
 ----------
 
-## Essayez la DEMO !
-
-
-## **[ https://demo-pretty-noemie.frama.site](https://demo-pretty-noemie.frama.site/login)**
+## info du compte admin
 Connectez-vous avec :
 
-    login : pretty
-    mdp : 12345678
+    login : stephane
+    mdp : 123456
 
 (Lorsque plusieurs personnes sont connectées en même temps au même site avec le même compte, NoemieCms peut estimer qu'il y a usurpation et renvoie des erreurs (`CSRF`)
 
@@ -32,52 +29,20 @@ Connectez-vous avec :
  - Et tout ce que votre créativité en fera
 
 
-## Utilisé par Framasoft pour construire les Pages Framasite
-
-Vous pouvez faire votre page Framasite, gratuitement et librement, là-bas :
-
-[https://frama.site/](https://frama.site/)
-
 
 ----------
 
-## Soutenir
-Pour soutenir le créateur de ce projet libre, vous pouvez faire un don sur Patreon :
-
-[https://www.patreon.com/robinbanquo](https://www.patreon.com/robinbanquo)
 
 
-----------
-
-## Derniers ajouts
-
- - formulaire d'initialisation pour l'installation sous la forme d'un standalone sur un serveur perso
- - menu qui réapparaît lorsqu'on scroll vers le haut
- - petits bugs corrigés
- - resizer d'images
- - module agenda (iframe google agenda/framagenda)
- - retravail de la page d'accueil
- - bouton "haut de page"
- - liens des boutons qui s'ouvrent dans un nouvel onglet
- - petits débugs en tout genre
- - Module réseaux sociaux
- - Menu en version mobile
- - Module lecteur audio (soundcloud) pour les personnes souhaitant faire le site de leur groupe de musique
- - Module avec lecteur Vidéo et vidéo d'arrière plan
- - Module Code avec coloration syntaxique, pour réaliser des tutos
- - Redesign des fenêtres
- - Redesign de la fenêtre de choix de modules (grâce à la contribution d'un designer)
-
-
-## Lancer PrettyNoemie en local
+## Lancer le projet en local
 
 **Pré-requis :**
-- PHP (7 recommandé)
+- PHP (7.2 recommandé)
 - `Composer` (sur votre système ou en installé dans votre dossier, [pour installer Composer, c'est ici](https://getcomposer.org/))
 
 Téléchargez les fichiers en zip ou clonez le repository avec :
 
-    git clone https://framagit.org/framasoft/PrettyNoemieCMS
+    git clone https://github.com/camerfredev/minisite-mono-page-plus-backoffice.git
 
 Puis à l'intérieur du dossier, lancez la commande d'installation avec `Composer` :
 
@@ -85,14 +50,6 @@ Puis à l'intérieur du dossier, lancez la commande d'installation avec `Compose
 
 Si la commande n'est pas reconnue, essayez : `php composer.phar installer`
 
-**Développement seulement** : dans le fichier `app/config/config.ini` le paramètre `isMediaPathModified` doit être à ``""`` en développement (et à **true** en production).
-Vérifiez que vous avez bien :
-
-    [globals]
-    /autres options/
-    /autres options/
-    /autres options/
-    isMediaPathModified =
 
 Lancez enfin le serveur local intégré à php (php7 voire un poil moins) avec :
 
@@ -104,7 +61,7 @@ Lancez enfin le serveur local intégré à php (php7 voire un poil moins) avec :
 Je pars du principe que vous utilisez Debian et la verison 7 de PHP-fpm
 
 **Pré-requis :**
-- PHP-fpm (7 recommandé)
+- PHP-fpm (7.2 recommandé)
 - Nginx
 - Composer (sur votre système ou en installé dans votre dossier, [pour installer Composer, c'est ici](https://getcomposer.org/))
 
@@ -119,7 +76,7 @@ Je pars du principe que vous utilisez Debian et la verison 7 de PHP-fpm
 
 Téléchargez les fichiers en zip ou clonez le repository avec :
 
-    git clone https://framagit.org/framasoft/PrettyNoemieCMS
+    git clone https://github.com/camerfredev/minisite-mono-page-plus-backoffice.git
 
 Puis à l'intérieur du dossier, lancez la commande d'installation avec Composer :
 
@@ -183,22 +140,6 @@ Il faut activer votre site dans Nginx :
     service php7.0-fpm restart
     service nginx restart
 
-## Contribuer
-
-Les Merges requests sont les bienvenues, et le bug report et les suggestions sont très appréciés
-
-Un chat de discussion publique est ouvert autour du projet pour venir discuter (y a pas forcement grand monde dessus, mais j'ai des notifications quand il y a des messages, donc n'hésitez pas)
-
-[https://riot.im/app/#/room/!wPhaCatDceeQqOQqdM:matrix.org](https://riot.im/app/#/room/!wPhaCatDceeQqOQqdM:matrix.org)
-
-Pour les bugs reports et autres discussions plus formelles autour du projet, merci d’ouvrir des [tickets sur Framagit](https://framagit.org/framasoft/PrettyNoemieCMS/issues).
-
-Pour savoir comment faire, voici un tuto sur l'utilisation de git et Gitlab pour contribuer :
-
-- [Gitbook (Framadoc) : Gitlab](https://docs.framasoft.org/fr/gitlab/)
-- [L’aide sur Framagit](https://framagit.org/help)
-- [L’aide de Gitlab.com](https://docs.gitlab.com/ee/README.html)
-- [Contribuer à des projets open source (openclassrooms, pour Github)](https://openclassrooms.com/courses/gerer-son-code-avec-git-et-github/contribuer-a-des-projets-open-source)
 
 
 ----------
