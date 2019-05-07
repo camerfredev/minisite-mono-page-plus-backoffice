@@ -1,0 +1,21 @@
+{
+  "name": "map",
+  "title": "Carte",
+  "description": "Module permettant d'afficher une carte pour aider vos visiteurs à vous trouver",
+  "tags":"moduleTag-special",
+  "hidden" : false,
+  "fields": {
+    "title": {
+      "type": "text",
+      "value": "<h5>Nous Trouver</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur</p>"
+    },
+    "lat": {
+      "type": "text",
+      "value": "48.858245"
+    },
+    "lon": {
+      "type": "text",
+      "value": "2.294397"
+    }
+  }
+}

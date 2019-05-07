@@ -1,0 +1,25 @@
+{
+  "name": "soundcloud",
+  "title": "Lecteur Audio",
+  "description": "Module permettant d'ajouter un lecteur audio hébergé sur SoundCloud",
+  "tags":"moduleTag-video moduleTag-text",
+  "hidden": false,
+  "fields": {
+    "audioType": {
+      "type": "text",
+      "value": "soundcloud"
+    },
+    "audioUrl": {
+      "type": "text",
+      "value": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/373859015&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"
+    },
+    "title": {
+      "type": "text",
+      "value": "<h5>Module lecteur audio</h5>"
+    },
+    "content": {
+      "type": "text",
+      "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere.</p>"
+    }
+  }
+}

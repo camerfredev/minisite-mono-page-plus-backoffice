@@ -1,0 +1,629 @@
+[
+    {
+        "id": "5cb9eb919ed44",
+        "module": "caroussel",
+        "fields": {
+            "text0": {
+                "type": "text",
+                "value": "<h4>BIENVENUE SUR NOTRE SITE<br \/><\/h4>"
+            },
+            "imgUrl0": {
+                "type": "text",
+                "value": "app\/views\/modules\/paralax\/background3.jpg"
+            },
+            "text1": {
+                "type": "text",
+                "value": ""
+            },
+            "imgUrl1": {
+                "type": "text",
+                "value": "app\/views\/modules\/paralax\/background3.jpg"
+            },
+            "text2": {
+                "type": "text",
+                "value": ""
+            },
+            "imgUrl2": {
+                "type": "text",
+                "value": "app\/views\/modules\/paralax\/background3.jpg"
+            },
+            "text3": {
+                "type": "text",
+                "value": ""
+            },
+            "imgUrl3": {
+                "type": "text",
+                "value": ""
+            },
+            "text4": {
+                "type": "text",
+                "value": ""
+            },
+            "imgUrl4": {
+                "type": "text",
+                "value": ""
+            },
+            "text5": {
+                "type": "text",
+                "value": ""
+            },
+            "imgUrl5": {
+                "type": "text",
+                "value": ""
+            },
+            "text6": {
+                "type": "text",
+                "value": ""
+            },
+            "imgUrl6": {
+                "type": "text",
+                "value": ""
+            },
+            "text7": {
+                "type": "text",
+                "value": ""
+            },
+            "imgUrl7": {
+                "type": "text",
+                "value": ""
+            }
+        }
+    },
+    {
+        "id": "5cb9ec7d73cd9",
+        "module": "three_goals",
+        "fields": {
+            "icon1": {
+                "type": "text",
+                "value": "all_inclusive"
+            },
+            "content1": {
+                "type": "text",
+                "value": "<h5>Faites une belle page web en moins d'une heure<\/h5><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p>"
+            },
+            "icon2": {
+                "type": "text",
+                "value": "toys"
+            },
+            "content2": {
+                "type": "text",
+                "value": "<h5>Configuration simple et personnalis\u00e9e<\/h5><p>Nous avons essay\u00e9 de trouver le meilleur compromis entre simplicit\u00e9 et options vari\u00e9es<\/p>"
+            },
+            "icon3": {
+                "type": "text",
+                "value": "tag_faces"
+            },
+            "content3": {
+                "type": "text",
+                "value": "<h5>D'une simplicit\u00e9 d\u00e9coiffante<\/h5><p>Dans NoemieCMS, tout est pens\u00e9 pour \u00eatre le plus intuitif possible<\/p>"
+            }
+        }
+    },
+    {
+        "id": "5cbca7dbac765",
+        "module": "two_goals",
+        "fields": {
+            "icon1": {
+                "type": "text",
+                "value": "apps"
+            },
+            "content1": {
+                "type": "text",
+                "value": "<h5>Faites une belle page web en moins d'une heure<\/h5><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p>"
+            },
+            "icon2": {
+                "type": "text",
+                "value": "local_grocery_store"
+            },
+            "content2": {
+                "type": "text",
+                "value": "<h5>Configuration simple et personnalis\u00e9e<\/h5><p>Nous avons essay\u00e9 de trouver le meilleur compromis entre simplicit\u00e9 et options vari\u00e9es<\/p><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p>"
+            }
+        },
+        "inMenuAs": ""
+    },
+    {
+        "id": "5cb9ed1c52dce",
+        "module": "headband",
+        "fields": {
+            "title": {
+                "type": "text",
+                "value": "<h4>MEZA &amp; le Web3D<\/h4>"
+            }
+        }
+    },
+    {
+        "id": "5cb9ed888e0fc",
+        "module": "long_text",
+        "fields": {
+            "title": {
+                "type": "text",
+                "value": "<h5>Section texte \u00e0 colonnes<\/h5>"
+            },
+            "content": {
+                "type": "text",
+                "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo<\/p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?<\/p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo<\/p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?<\/p>"
+            }
+        }
+    },
+    {
+        "id": "5cb9eda40247f",
+        "module": "timeline",
+        "fields": {
+            "date0": {
+                "type": "text",
+                "value": "<p>Mars 2015 - Avril 2016<\/p>"
+            },
+            "title0": {
+                "type": "text",
+                "value": "<p>Cuisinier<\/p>"
+            },
+            "content0": {
+                "type": "text",
+                "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, nulla pariatur quo saepe sequi sint, vitae voluptates volu<\/p>"
+            },
+            "date1": {
+                "type": "text",
+                "value": "<p>Mars 2014 - Avril 2015<\/p>"
+            },
+            "title1": {
+                "type": "text",
+                "value": "<p>p\u00e2tissier<\/p>"
+            },
+            "content1": {
+                "type": "text",
+                "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, nulla pariatur quo saepe sequi sint, vitae voluptates volu<\/p>"
+            },
+            "date2": {
+                "type": "text",
+                "value": "<p>Mars 2013 - Avril 2014<\/p>"
+            },
+            "title2": {
+                "type": "text",
+                "value": "<p>Cuisinier<\/p>"
+            },
+            "content2": {
+                "type": "text",
+                "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, nulla pariatur quo saepe sequi sint, vitae voluptates volu<\/p>"
+            },
+            "date3": {
+                "type": "text",
+                "value": ""
+            },
+            "title3": {
+                "type": "text",
+                "value": "<p>Cuisinier<\/p>"
+            },
+            "content3": {
+                "type": "text",
+                "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, nulla pariatur quo saepe sequi sint, vitae voluptates volu<\/p>"
+            }
+        },
+        "inMenuAs": "porfolio"
+    },
+    {
+        "id": "5cb9edbe9c654",
+        "module": "separator",
+        "fields": []
+    },
+    {
+        "id": "5cb9edfe2518a",
+        "module": "text_section",
+        "fields": {
+            "title": {
+                "type": "text",
+                "value": "<h5>PrettyNo\u00ebmie<\/h5>"
+            },
+            "content": {
+                "type": "text",
+                "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?<\/p>"
+            }
+        }
+    },
+    {
+        "id": "5cb9ee254090f",
+        "module": "headband",
+        "fields": {
+            "title": {
+                "type": "text",
+                "value": "<h4>IMAGINEZ NOTRE DAME EN WEB3D te de votre choix<\/h4>"
+            }
+        }
+    },
+    {
+        "id": "5cc162e25b8c2",
+        "module": "paralax",
+        "fields": {
+            "text": {
+                "type": "text",
+                "value": "<h4>Bienvenue sur votre site web<\/h4>"
+            },
+            "imgUrl": {
+                "type": "text",
+                "value": "app\/views\/modules\/paralax\/background3.jpg"
+            }
+        }
+    },
+    {
+        "id": "5cb9ee7e5e143",
+        "module": "three_goals",
+        "fields": {
+            "icon1": {
+                "type": "text",
+                "value": "face"
+            },
+            "content1": {
+                "type": "text",
+                "value": "<h5>Faites une belle page web en moins d'une heure<\/h5><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p>"
+            },
+            "icon2": {
+                "type": "text",
+                "value": "toys"
+            },
+            "content2": {
+                "type": "text",
+                "value": "<h5>Configuration simple et personnalis\u00e9e<\/h5><p>Nous avons essay\u00e9 de trouver le meilleur compromis entre simplicit\u00e9 et options vari\u00e9es<\/p>"
+            },
+            "icon3": {
+                "type": "text",
+                "value": "fingerprint"
+            },
+            "content3": {
+                "type": "text",
+                "value": "<h5>D'une simplicit\u00e9 d\u00e9coiffante<\/h5><p>Dans NoemieCMS, tout est pens\u00e9 pour \u00eatre le plus intuitif possible<\/p>"
+            }
+        }
+    },
+    {
+        "id": "5cb9ee95c9a21",
+        "module": "paralax",
+        "fields": {
+            "text": {
+                "type": "text",
+                "value": "<h4>we are the best<\/h4>"
+            },
+            "imgUrl": {
+                "type": "text",
+                "value": "sites\/framasite\/medias\/5cc0ae16bd334.jpg"
+            }
+        }
+    },
+    {
+        "id": "5cb9eebc8b832",
+        "module": "button",
+        "fields": {
+            "imgUrl": {
+                "type": "text",
+                "value": ""
+            },
+            "text": {
+                "type": "text",
+                "value": "<p style=\"text-align:center;\">Vous avez des comp\u00e9tences en d\u00e9veloppement ou en design ?<\/p><p style=\"text-align:center;\">Des id\u00e9es pour am\u00e9liorer cet outil ?<\/p><h5 style=\"text-align:center;\">Rejoignez-nous sur Framagit, c\u2019est ouvert \u00e0 toutes et \u00e0 tous !<\/h5><p><\/p>"
+            },
+            "btnLabel": {
+                "type": "text",
+                "value": "Contribuer \u00e0 cet outil !"
+            },
+            "btnValue": {
+                "type": "text",
+                "value": "https:\/\/framagit.org\/framasoft\/PrettyNoemieCMS"
+            }
+        }
+    },
+    {
+        "id": "5cb9eee9bcb44",
+        "module": "text_section",
+        "fields": {
+            "title": {
+                "type": "text",
+                "value": "<h5>PrettyNo\u00ebmie<\/h5>"
+            },
+            "content": {
+                "type": "text",
+                "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?<\/p>"
+            }
+        }
+    },
+    {
+        "id": "5cc179023ea9b",
+        "module": "mini_paralax",
+        "fields": {
+            "text": {
+                "type": "text",
+                "value": "<h4>Bienvenue sur mon nouveax paralax<\/h4>"
+            },
+            "imgUrl": {
+                "type": "text",
+                "value": "app\/views\/modules\/mini_paralax\/simple.jpg"
+            }
+        }
+    },
+    {
+        "id": "5cb99a21682d8",
+        "module": "team",
+        "fields": {
+            "title": {
+                "type": "text",
+                "value": "<h4>Notre Equipe<\/h4>"
+            },
+            "imgUrl1": {
+                "type": "text",
+                "value": "sites\/framasite\/medias\/5cb9c9a191094.jpg"
+            },
+            "content1": {
+                "type": "text",
+                "value": "<h5>Member Of Team<\/h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, <\/p>"
+            },
+            "imgUrl2": {
+                "type": "text",
+                "value": "sites\/framasite\/medias\/5cbb4fbf35a88.png"
+            },
+            "content2": {
+                "type": "text",
+                "value": "<h5>Member Of Team<\/h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere,<\/p>"
+            },
+            "imgUrl3": {
+                "type": "text",
+                "value": "app\/views\/modules\/photo_cv\/default-profile.png"
+            },
+            "content3": {
+                "type": "text",
+                "value": "<h5>Member Of Team<\/h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.|<\/p>"
+            }
+        },
+        "inMenuAs": "notre equipe"
+    },
+    {
+        "id": "5acb42e6c93e9",
+        "module": "three_goals",
+        "fields": {
+            "icon1": {
+                "type": "text",
+                "value": "face"
+            },
+            "content1": {
+                "type": "text",
+                "value": "<h5>Faites une belle page web en moins d'une heure<\/h5><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p>"
+            },
+            "icon2": {
+                "type": "text",
+                "value": "toys"
+            },
+            "content2": {
+                "type": "text",
+                "value": "<h5>Configuration simple et personnalis\u00e9e<\/h5><p>Nous avons essay\u00e9 de trouver le meilleur compromis entre simplicit\u00e9 et options vari\u00e9es<\/p>"
+            },
+            "icon3": {
+                "type": "text",
+                "value": "tag_faces"
+            },
+            "content3": {
+                "type": "text",
+                "value": "<h5>D'une simplicit\u00e9 d\u00e9coiffante<\/h5><p>Dans NoemieCMS, tout est pens\u00e9 pour \u00eatre le plus intuitif possible<\/p>"
+            }
+        },
+        "inMenuAs": "services"
+    },
+    {
+        "id": "5acb42e6c9466",
+        "module": "products",
+        "fields": {
+            "title": {
+                "type": "text",
+                "value": "<h4>Explorez les possibilit\u00e9s de votre site !<\/h4>"
+            },
+            "imgUrl1": {
+                "type": "text",
+                "value": "app\/views\/modules\/products\/products.jpg"
+            },
+            "content1": {
+                "type": "text",
+                "value": "<h5>Des modules pour tout vos besoins<\/h5><p> A placer, \u00e0 d\u00e9placer, \u00e0 modifier en r\u00e9digeant vos textes, en ajoutant vos photos et vos images<\/p>"
+            },
+            "price1": {
+                "type": "text",
+                "value": ""
+            },
+            "imgUrl2": {
+                "type": "text",
+                "value": "app\/views\/modules\/products\/products.jpg"
+            },
+            "content2": {
+                "type": "text",
+                "value": "<h5>Des th\u00e8mes graphiques<\/h5><p>Vous pouvez modifier les couleurs de texte et les couleurs de fond, soyez plein d\u2019imagination\u202f!<\/p>"
+            },
+            "price2": {
+                "type": "text",
+                "value": ""
+            },
+            "imgUrl3": {
+                "type": "text",
+                "value": "app\/views\/modules\/products\/products.jpg"
+            },
+            "content3": {
+                "type": "text",
+                "value": "<h5>Des jeux de polices de caract\u00e8res<\/h5><p>Pour tous les styles, classiques ou plus fantaisistes<\/p>"
+            },
+            "price3": {
+                "type": "text",
+                "value": ""
+            }
+        },
+        "inMenuAs": ""
+    },
+    {
+        "id": "5acb42e6c94ed",
+        "module": "caroutext",
+        "fields": {
+            "imgUrl0": {
+                "type": "text",
+                "value": "app\/views\/modules\/gallery\/aquarelle_2.jpg"
+            },
+            "imgUrl1": {
+                "type": "text",
+                "value": "app\/views\/modules\/gallery\/aquarelle_10.jpg"
+            },
+            "imgUrl2": {
+                "type": "text",
+                "value": "app\/views\/modules\/gallery\/aquarelle_16.jpg"
+            },
+            "imgUrl3": {
+                "type": "text",
+                "value": "app\/views\/modules\/gallery\/aquarelle_17.jpg"
+            },
+            "title": {
+                "type": "text",
+                "value": "<h5>Faites le plein d\u2019images !<\/h5>"
+            },
+            "content": {
+                "type": "text",
+                "value": "<p>Installez vos images ou gardez celles qui sont fournies ou faites un panach\u00e9. Galerie d\u2019images, carrousel, cartes anim\u00e9es, etc.<\/p>"
+            }
+        },
+        "inMenuAs": "ordinateur"
+    },
+    {
+        "id": "5cbca13d14ce4",
+        "module": "three_goals",
+        "fields": {
+            "icon1": {
+                "type": "text",
+                "value": "flash_on"
+            },
+            "content1": {
+                "type": "text",
+                "value": "<h5>Faites une belle page web en moins d'une heure<\/h5><p>NoemieCMS est un outil libre qui vous offre tout ce qu\u2019il faut pour faire une page web en toute ind\u00e9pendance \u2014 vous avez le contr\u00f4le de votre page web : c\u2019est vous l\u2019admin\u202f!<\/p>"
+            },
+            "icon2": {
+                "type": "text",
+                "value": "group"
+            },
+            "content2": {
+                "type": "text",
+                "value": "<h5>Configuration simple et personnalis\u00e9e<\/h5><p>Nous avons essay\u00e9 de trouver le meilleur compromis entre simplicit\u00e9 et options vari\u00e9es<\/p>"
+            },
+            "icon3": {
+                "type": "text",
+                "value": "settings"
+            },
+            "content3": {
+                "type": "text",
+                "value": "<h5>D'une simplicit\u00e9 d\u00e9coiffante<\/h5><p>Dans NoemieCMS, tout est pens\u00e9 pour \u00eatre le plus intuitif possible<\/p>"
+            }
+        }
+    },
+    {
+        "id": "5acb42e6c9585",
+        "module": "video",
+        "fields": {
+            "videoType": {
+                "type": "text",
+                "value": "youtube"
+            },
+            "videoId": {
+                "type": "text",
+                "value": "5lASkq5RWNE"
+            },
+            "title": {
+                "type": "text",
+                "value": "<h4 style=\"text-align:center;\">Besoin d'aide avant de vous lancer dans la cr\u00e9ation de votre page? <\/h4>"
+            },
+            "content": {
+                "type": "text",
+                "value": "<p>Cette vid\u00e9o tutoriel vous guidera dans vos premiers pas avec Noemie CMS<\/p>"
+            }
+        },
+        "inMenuAs": "videos"
+    },
+    {
+        "id": "5acb42e6c95fc",
+        "module": "button",
+        "fields": {
+            "imgUrl": {
+                "type": "text",
+                "value": ""
+            },
+            "text": {
+                "type": "text",
+                "value": "<p style=\"text-align:center;\">Vous avez des comp\u00e9tences en d\u00e9veloppement ou en design ?\u00a0<\/p><p style=\"text-align:center;\">Des id\u00e9es pour am\u00e9liorer cet outil ?<\/p><h5 style=\"text-align:center;\">Rejoignez-nous sur Framagit, c\u2019est ouvert \u00e0 toutes et \u00e0 tous !<\/h5><p><\/p>"
+            },
+            "btnLabel": {
+                "type": "text",
+                "value": "Contribuer \u00e0 cet outil !"
+            },
+            "btnValue": {
+                "type": "text",
+                "value": "https:\/\/framagit.org\/framasoft\/PrettyNoemieCMS"
+            }
+        }
+    },
+    {
+        "id": "5cbcc729d90ed",
+        "module": "meza_contact",
+        "fields": {
+            "text": {
+                "type": "text",
+                "value": "<h5 style=\"text-align:center;\"> Contactez nousfe :<\/h5><p style=\"text-align:center;\">Lorem ipsum dolor sit amet, cons ectetur adipisicing elit. Doloremque eveniet facilis odio repellendus sunt veritatis.\u00a0<br \/><\/p>"
+            },
+            "email": {
+                "type": "text",
+                "value": "meza@gmail.com"
+            }
+        }
+    },
+    {
+        "id": "5cbcc0f3781d5",
+        "module": "social_media",
+        "fields": {
+            "title": {
+                "type": "text",
+                "value": "<h5 style=\"text-align:center;\">Retrouvez nous sur les r\u00e9seaux sociaux<\/h5>"
+            },
+            "facebook": {
+                "type": "text",
+                "value": "http:\/\/projetpretty.com\/#"
+            },
+            "twitter": {
+                "type": "text",
+                "value": ""
+            },
+            "linkedin": {
+                "type": "text",
+                "value": "http:\/\/projetprettsy.com\/#"
+            },
+            "mastodon": {
+                "type": "text",
+                "value": ""
+            },
+            "youtube": {
+                "type": "text",
+                "value": ""
+            },
+            "discord": {
+                "type": "text",
+                "value": ""
+            },
+            "instagram": {
+                "type": "text",
+                "value": "http:\/\/projetpretty.com\/#"
+            },
+            "diaspora": {
+                "type": "text",
+                "value": ""
+            }
+        }
+    },
+    {
+        "id": "footer",
+        "fields": {
+            "rightText": {
+                "type": "text",
+                "value": "<p class=\"second-color\">Ce pied de page peut \u00eatre rempli \u00e0 votre fa\u00e7on, sur une ou plusieurs ligne<\/p><p class=\"second-color\"><br \/><\/p>"
+            },
+            "leftText": {
+                "type": "text",
+                "value": "<h5 class=\"second-color\">NoemieCMS<\/h5><p class=\"second-color\">Made with love by <b>Robin Banquo<\/b> <a href=\"https:\/\/www.patreon.com\/robinbanquo\">vos dons sont <br \/><\/a><\/p>"
+            }
+        }
+    }
+]

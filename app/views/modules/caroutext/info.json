@@ -1,0 +1,34 @@
+{
+  "name": "caroutext",
+  "title": "Images et texte",
+  "description": "Module permettant d'afficher 4 images accompagnées d'un texte",
+  "hidden" : false,
+  "tags" : "moduleTag-img moduleTag-text",
+  "fields": {
+    "imgUrl0": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_2.jpg"
+    },
+    "imgUrl1": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_10.jpg"
+    },
+    "imgUrl2": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_16.jpg"
+    },
+    "imgUrl3": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_17.jpg"
+    },
+
+    "title": {
+      "type": "text",
+      "value": "<h5>Faites le plein d’images !</h5>"
+    },
+    "content": {
+      "type": "text",
+      "value": "<p>Installez vos images ou gardez celles qui sont fournies ou faites un panaché. Galerie d’images, carrousel, cartes animées, etc.</p>"
+    }
+  }
+}

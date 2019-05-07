@@ -1,0 +1,50 @@
+<div class="main-background">
+	<div class="container module ">
+		<div class="section relative" style="padding-top: 0 !important;padding-bottom: 20px !important;">
+			<check if="{{ @isAdminPage }}">
+				<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn modal-trigger" href="#editCodeModal-{{@id}}" data-position="left"
+				   data-delay="250" data-tooltip="Choisir le language utilisé" style=" right: 30px; top: 70px; z-index: 1000">
+					<i class="material-icons">code</i></a>
+			</check>
+			<link rel="stylesheet" href="public/css/atom-one-dark.css">
+			<div class="row no-margin " style="overflow-y: hidden; ">
+				<pre style="overflow: hidden; ">
+					<code class=" editable codeHiglight {{@fields['language']['value']}}" id="moduleValue-content">
+
+					{{@fields['content']['value'] |raw }}
+
+				</code></pre>
+
+			</div>
+		</div>
+	</div>
+</div>
+<check if="{{ @isAdminPage }}">
+	<div id="editCodeModal-{{@id}}" class=" editCodeModal modal modal-fixed-header small-modal ">
+		<div class="modal-header" style="z-index: 6001">
+			<h5 class="white-text" style="padding: 15px !important; margin: 0 !important;">Choix du language
+				utilisé</h5>
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text">clear</i></a>
+		</div>
+
+		<form class="editCodeForm" id="editCodeForm-{{@id}}">
+			<div class="row" style="margin-top: 80px">
+				<div class="input-field col s12 m6 offset-m3 ">
+
+					<select name="language">
+						<repeat group="{{ [ 'Apache',  'Bash',  'C#',  'C++',  'CSS',  'CoffeeScript',  'Diff',  'HTML', 'XML',  'HTTP',  'Ini',  'JSON',  'Java',  'JavaScript',  'Makefile',  'Markdown' , 'Nginx'  ,'Objective-C',  'PHP' , 'Perl',  'Python',  'Ruby',  'SQL',  'Shell' ,'Session'] }}" value="{{ @language }}">
+							<option value="{{@language }}" selected>{{@language}}</option>
+						</repeat>
+					</select>
+					<label>Sélectionnez le language utilisé</label>
+				</div>
+			</div>
+			<div class="row center-align">
+					<button type="submit" class="btn frama-orange hover-frama-purple waves-effect waves-light btn">
+						<i class="material-icons right">done</i>Valider
+					</button>
+
+			</div>
+		</form>
+	</div>
+</check>

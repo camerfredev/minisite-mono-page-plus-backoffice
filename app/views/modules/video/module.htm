@@ -1,0 +1,88 @@
+<div class="second-background relative module" style="overflow: hidden">
+	<div class="container">
+
+		<div class="section relative" style="padding-top: 60px !important;padding-bottom: 60px !important; z-index: 10">
+			<div class="row no-margin  relative">
+				<div class="col s12 xl4" style="padding: 0 25px 0 0 !important;">
+					<div class="row">
+						<div class="col s12  second-color title-font editable " id="moduleValue-title">
+							{{@fields['title']['value'] | raw}}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12  second-color main-font editable" id="moduleValue-content" style="text-align: justify">
+							{{@fields['content']['value'] | raw}}
+						</div>
+					</div>
+				</div>
+				<div class="relative col s12 xl8 " style="padding: 0 0 0 25px !important;">
+					<check if="{{ @isAdminPage }}">
+						<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn modal-trigger" href="#editVideoModal-{{@id}}" data-position="left"
+						   data-delay="250" data-tooltip="Choisir la vidéo" style=" right: -27px; top: -30px; z-index: 1000">
+							<i class="material-icons">play_circle_filled</i></a>
+
+					</check>
+					<div class="video-container" id="videoContainer-{{@id}}">
+						<check if="{{ @fields['videoType']['value'] == 'youtube'}}">
+							<iframe width="560" height="315" src="//www.youtube.com/embed/{{@fields['videoId']['value']}}" frameborder="0" allowfullscreen></iframe>
+						</check>
+						<check if="{{ @fields['videoType']['value'] == 'peertube' }}">
+							<iframe width="560" height="315" src="https://{{@fields['instance']['value']}}/videos/embed/{{@fields['videoId']['value']}}" frameborder="0" allowfullscreen></iframe>
+						</check>
+						<check if="{{ @fields['videoType']['value'] == 'vimeo' }}">
+							<iframe src="https://player.vimeo.com/video/{{@fields['videoId']['value']}}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+						</check>
+
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+<check if="{{ @isAdminPage }}">
+	<div id="editVideoModal-{{@id}}" class=" editVideoModal modal modal-fixed-header ">
+		<div class="modal-header" style="z-index: 6001">
+			<h5 class="white-text" style="padding: 15px !important; margin: 0 !important;">Choix de la vidéo</h5>
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text">clear</i></a>
+		</div>
+		<div class="modal-content ">
+			<div class="row valign-wrapper tooltipped frama-purple shadow-bottom" data-position="bottom"
+				 data-delay="250" data-tooltip="Copiez l'adresse de votre vidéo dans la barre d'adresse" style="padding: 15px; border-radius: 5px; ">
+				<div class="col s12 m2">
+					<i class="material-icons white-text medium">content_cut</i></p>
+				</div>
+				<div class="col s12 m10 no-padding"><img class="responsive-img no-padding no-margin" style="border-radius: 4px" src="app/views/modules/video/capture.png" alt="capture d'écran youtube"></div>
+			</div>
+			<form class="editVideoForm" id="editVideoForm-{{@id}}">
+				<div class="row" style="margin-top: 30px">
+					<div class="input-field col s12 m4">
+
+						<select name="videoType">
+							<option value="youtube" selected>Youtube</option>
+							<option value="peertube">Peertube</option>
+							<option value="vimeo">Vimeo</option>
+						</select>
+
+						<label>Sélectionnez la source de votre vidéo</label>
+					</div>
+					<div class="input-field col s12 m8 ">
+						<input name="videoUrl" type="url" required class="validate grey-text text-darken-3" value="{{@fields['btnValue']['value'] }}">
+						<label for="value">Collez l'adresse de votre vidéo <b>ici</b></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 center-align">
+						<button type="submit" class="btn frama-orange hover-frama-purple waves-effect waves-light btn">
+							<i class="material-icons right">done</i>Valider
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</check>

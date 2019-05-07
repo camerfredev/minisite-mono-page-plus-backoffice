@@ -1,0 +1,120 @@
+
+/* .nav{
+    min-height:100px;
+}
+nav .button-collapse {
+    
+    left: 50%;
+    
+   
+
+} 
+ .side-nav {
+    position: static;
+    width: 100%;
+   text-align: center;
+   transform: translateY(-17px);
+   margin-top: 31px !important;
+   overflow-y: hidden;
+   transform: translateX(-203%) ;
+  
+} 
+ .hide-on-med-and-down {
+
+    display: none !important;
+
+} 
+.brand-logo {
+
+     left: 50%;
+    -webkit-transform: translateX(-50%); 
+
+
+}
+*/
+
+/*POUR LA SECTION A TEXTE A 3 COLONNE*/
+#moduleValue-content p:first-child {
+    /* border: solid red 3px; */
+    margin-top:0 ;
+}
+
+/*Pour le module deux block*/
+
+.deux-block{
+ width: 100%; 
+padding: 20px 0;
+/* display: inline-flex; */
+}
+
+/*pour la position du footer*/ 
+.footer-copyright{
+    position: fixed;
+    left: 0px;
+    bottom: -3px;
+    width: 100%;
+    background: #687789 !important;
+    z-index: 199;
+    text-align: center;
+    /* height: -30px; */
+}
+
+.link-footer{
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 1.3px;
+    font-size: 1.3rem;
+    padding:0 4px;
+}
+.link-it{
+ font-weight: normal
+}
+.link-footer:hover{
+    color: #FFF;
+}
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{
+	z-index:3;
+}
+ /*
+@media only screen and (min-width: 362px) {
+
+    nav .button-collapse {
+        display: block;
+        left: 50%;
+        
+        bottom: -45px !important;
+       
+    
+    } 
+}
+@media only screen and (min-width: 763px) {
+
+     .side-nav {
+    
+        width: 50%;
+        margin: auto;
+       
+       
+    }
+} */
+@media only screen and (min-width: 993px) {
+
+    /* nav a.button-collapse {
+
+        display: block;
+    
+    } */
+
+
+/*Pour le module deux block*/
+    .deux-block-align{
+        display: flex;
+    }
+    .deux-block{
+     width: 50%; 
+    padding: 20px 0;
+    /* display: inline-flex; */
+    }
+
+}

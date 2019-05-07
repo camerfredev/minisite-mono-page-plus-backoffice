@@ -1,0 +1,45 @@
+<div id="addSectionModal" class="modal modal-fixed-header big-modal" style="background-color: rgba(255,255,255,0.90) !important;">
+
+	<div class="modal-header ">
+		<h5 class="white-text" style="padding: 15px !important; margin: 0 !important;">Ajouter un module</h5>
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text">clears</i></a>
+		<div class=" absolute hide-on-small-only" style="" id="tagsContainer">
+		</div>
+	</div>
+	<div class="modal-content ">
+		<div class="threeColumn">
+			<repeat group="{{ @modulesList }}" value="{{ @module }}">
+				<check if="{{ @module['hidden'] }}">
+					<true>
+					</true>
+					<false>
+						<div class="relative  moduleSelectorContainer {{@module['tags']}}">
+							<div class="infoModuleBtn absolute " style="top: 8px; left: 8px ; z-index: 6100; cursor: help">
+								<i class="material-icons frama-orange-text tooltipped" data-position="right"
+								   data-delay="50" data-tooltip="{{@module['description']}}">info_outline</i>
+							</div>
+
+							<div class="row parent-hover relative white hoverBorderInBox chooseModuleBtn light-shadow " style="break-inside: avoid-column !important;
+	-webkit-column-break-inside: avoid !important; cursor: pointer; margin-bottom: 30px; padding: 6px !important; overflow: visible" id="chooseModuleBtn-{{@module['name']}}">
+
+								<div class="row no-margin frama-purple-text ">
+
+									<h5 class="center-align no-margin" style="padding: 5px 0 10px 0">
+										{{@module['title']}}</h5>
+								</div>
+								<div class="row no-margin no-padding ">
+									<img src="app/views/modules/{{@module['name']}}/preview.png" class="responsive-img   no-margin" style=" background-color: rgb(255,255,255); !important; ; padding: 0 5px">
+								</div>
+								<span class="btn-floating waves-effect waves-light children-hover frama-orange  absolute" style="bottom: -20px; left: 50%; margin-left: -20px"><i class="material-icons">add</i></span>
+							</div>
+						</div>
+					</false>
+				</check>
+
+			</repeat>
+		</div>
+
+	</div>
+
+</div>
+<include href="./base/editBtns/addSectionForm.htm"/>

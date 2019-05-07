@@ -1,0 +1,29 @@
+{
+  "name": "button_design",
+  "title": "Bouton Design",
+  "description": "Module permettant d'afficher un bouton avec un lien configurable, avec une image de fond large ",
+  "hidden" : false,
+  "tags" : "moduleTag-special moduleTag-img",
+  "fields": {
+    "imgUrl": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_17.jpg"
+    },
+    "text": {
+      "type": "text",
+      "value": "<p>Si vous souhaitez remercier son créateur, et l'encourager à maintenir cet outil et le rendre de plus en plus ergonomique, avec une petite donnation, c'est ici</p>"
+    },
+    "title": {
+      "type": "text",
+      "value": "<h5>Cet outil vous est utile?</h5>"
+    },
+    "btnLabel": {
+      "type": "text",
+      "value": "Soutenir l'auteur"
+    },
+    "btnValue": {
+      "type": "text",
+      "value": "https://www.patreon.com/robinbanquo"
+    }
+  }
+}

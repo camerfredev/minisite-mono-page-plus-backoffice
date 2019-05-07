@@ -1,0 +1,93 @@
+
+{*Template comprenant le head du html avec l'inclusion des feuilles de style*}
+
+<head>
+	<style type="text/css">
+		@font-face {
+			font-family: 'Material Icons';
+			font-style: normal;
+			font-weight: 400;
+			src: url('public/fonts/iconfont/MaterialIcons-Regular.eot'); /* For IE6-8 */
+			src: local('Material Icons'),
+			local('MaterialIcons-Regular'),
+			url('public/fonts/iconfont/MaterialIcons-Regular.woff2') format('woff2'),
+			url('public/fonts/iconfont/MaterialIcons-Regular.woff') format('woff'),
+			url('public/fonts/iconfont/MaterialIcons-Regular.ttf') format('truetype');
+		}
+	</style> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>{{ @siteOptions['params']['title'] |raw}}</title>
+	<meta property="og:image" content="{{ @siteOptions['params']['favIcon']|raw}}" />
+	<meta name="description" content="{{ @siteOptions['params']['description' ]|raw}}" />
+	<meta name="keywords" content="{{ @siteOptions['params']['keywords'] |raw}}" />
+	<meta http-equiv="content-language" content="{{ @siteOptions['params']['lang'] |raw}}" />
+	<meta name="language" content="{{ @siteOptions['params']['lang'] |raw}}" />
+	<link rel="icon" type="image/png" href="{{ @siteOptions['params']['favIcon']| raw}}" />
+	<!-- CSS  -->
+	<link href="public/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="public/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="public/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>  
+<check if="{{ @isAdminPage }}">
+	<link rel="stylesheet" href="public/js/croppie/croppie.css">
+	<link rel="stylesheet" href="public/css/medium-editor.min.css">
+	<link rel="stylesheet" href="public/css/beagle.css">
+</check>
+	<style type="text/css" id="themeClassCSS">
+		.menu-background {
+		background-color: {{@siteOptions['theme']['menu_background']}} !important;
+		}
+		.main-background {
+		background-color: {{@siteOptions['theme']['main_background']}} !important;
+		}
+		.main-color, .main-color * {
+		color: {{@siteOptions['theme']['main_color']}} !important;
+		}
+		.contrasted-color, .contrasted-color * {
+		color: {{@siteOptions['theme']['contrasted_color']}} !important;
+		}
+		.second-background {
+		background-color: {{@siteOptions['theme']['second_background']}} !important;
+		}
+		.second-color, .second-color * {
+		color: {{@siteOptions['theme']['second_color']}} !important;
+		}
+	</style>
+	<check if="{{ @isAdminPage }}">
+		<style type="text/css">
+			.editable:hover {
+
+				-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35);
+				-moz-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35);
+				box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.35);
+
+			}
+		</style>
+
+	</check>
+
+	<style type="text/css"> 
+
+		@font-face {
+			font-family: {{"'" . @siteOptions['font']['title']['css1']."'"}};
+			src:  url('public/fonts/customFonts/{{@siteOptions['font']['title']['local']}}-Regular.ttf')  format('truetype');
+		}
+		@font-face {
+		font-family: {{"'" . @siteOptions['font']['main']['css1']."'"}};
+		src:  url('public/fonts/customFonts/{{@siteOptions['font']['main']['local']}}-Regular.ttf')  format('truetype');
+		}
+	</style>
+	<style type="text/css" id="fontClassCSS">
+		.title-font, .title-font *  {
+		font-family: {{"'" . @siteOptions['font']['title']['css1']."'"}},{{"'".@siteOptions['font']['title']['css2'] ."'"}} ;
+		font-size:  200  %  !important  ;
+		}
+		.main-font , .main-font * {
+		font-family: {{"'" . @siteOptions['font']['main']['css1']."'"}},{{"'".@siteOptions['font']['main']['css2'] ."'"}} ;
+		font-stretch: ultra-expanded !important;
+		}
+
+
+	</style>
+
+</head>

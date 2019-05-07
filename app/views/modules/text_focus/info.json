@@ -1,0 +1,17 @@
+{
+  "name": "text_focus",
+  "title": "Section texte avec focus",
+  "description": "Module permettant d'afficher du contenu textuel mis en avant",
+  "tags":"moduleTag-text moduleTag-animated moduleTag-cv",
+  "hidden" : false,
+  "fields": {
+    "text": {
+      "type": "text",
+      "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur<p>"
+    },
+    "focus": {
+      "type": "text",
+      "value": "<h5>Texte mis en avant</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur<p>"
+    }
+  }
+}

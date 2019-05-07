@@ -1,0 +1,45 @@
+{
+  "name": "social_media",
+  "title": " Boutons Sociaux",
+  "description": "Boutons pointant vers vos pages sur des réseaux sociaux pour que vos visiteurs puissent vous y retrouver.",
+  "hidden": false,
+  "tags": "moduleTag-special moduleTag-cv",
+  "fields": {
+    "title": {
+      "type": "text",
+      "value": "<h5 style=\"text-align:center;\">Retrouvez nous sur les réseaux sociaux</h5>"
+    },
+    "facebook": {
+      "type": "text",
+      "value": ""
+    },
+    "twitter": {
+      "type": "text",
+      "value": ""
+    },
+    "linkedin": {
+      "type": "text",
+      "value": ""
+    },
+    "mastodon": {
+      "type": "text",
+      "value": ""
+    },
+    "youtube": {
+      "type": "text",
+      "value": ""
+    },
+    "discord": {
+      "type": "text",
+      "value": ""
+    },
+    "instagram": {
+      "type": "text",
+      "value": ""
+    },
+    "diaspora": {
+      "type": "text",
+      "value": ""
+    }
+  }
+}

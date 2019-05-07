@@ -1,0 +1,13 @@
+{
+  "name": "headband",
+  "title": "Bandeau de texte coloré",
+  "description": "Module permettant d'afficher une séparation colorée pour aérer votre site, avec ou sans texte.",
+  "tags": "moduleTag-animated moduleTag-text",
+  "hidden" : false,
+  "fields": {
+    "title": {
+      "type": "text",
+      "value": "Insérer le texte de votre choix"
+    }
+  }
+}

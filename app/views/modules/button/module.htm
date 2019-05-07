@@ -1,0 +1,75 @@
+<div class="main-background relative module" style="overflow: hidden">
+
+	<img class="absolute " id="moduleValue-imgUrl" src="{{@fields['imgUrl']['value']}}" alt="{{@fields['imgUrl']['value'] |imgAlt}}" style="width: 100% ; height: auto; top: 0; right: 0">
+	<div class="container  ">
+		<check if="{{ @isAdminPage }}">
+			<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn editBtnImage" data-position="right"
+			   data-delay="250" data-tooltip="modifier l'image - Taille recommandée : 1900x600px" id="editBtnImage-{{@id}}" style=" left: 100px; top: 100px; z-index: 1000">
+				<i class="material-icons">image</i></a>
+
+			<a class=" {{ @fields['imgUrl'.@key]['value'] ? '' : 'displaynone'}} btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn removeBtnImage" data-position="right"
+			   data-delay="250" data-tooltip="retirer l'image de fond" id="removeBtnImage-{{@id}}" style=" left: 150px; top: 100px; z-index: 1000">
+				<i class="material-icons">delete</i></a>
+
+
+		</check>
+		<div class="section relative" style="{{@fields['imgUrl']['value']?'padding-top: 120px !important;padding-bottom: 120px !important' : 'padding-top: 40px !important;padding-bottom: 40px !important'}}; z-index: 10">
+			<div class="row">
+
+				<div class="col s12  second-color title-font editable center" id="moduleValue-text" style="text-align: justify; margin-bottom: 00px !important; font-size: 130%">
+					{{@fields['text']['value'] | raw}}
+				</div>
+
+			</div>
+			<div class="row center-align relative">
+				<span class="relative" style="width: content-box">
+					<check if="{{ @isAdminPage }}">
+						<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn modal-trigger" href="#editBtnModal-{{@id}}" data-position="right"
+						   data-delay="250" data-tooltip="Paramètres du bouton" style=" right: -20px; top: -50px; z-index: 1000">
+							<i class="material-icons">settings</i></a>
+
+					</check>
+					<a target="_blank" class="btn-large second-color second-background waves-effect waves-light" id="btnModuleBtn-{{@id}}" href="{{@fields['btnValue']['value']}}">{{@fields['btnLabel']['value']}}</a>
+
+				</span>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+<check if="{{ @isAdminPage }}">
+	<div id="editBtnModal-{{@id}}" class="editBtnModal modal modal-fixed-header small-modal">
+		<div class="modal-header" style="z-index: 6001">
+			<h5 class="white-text" style="padding: 15px !important; margin: 0 !important;">Configuration du Bouton</h5>
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text">clear</i></a>
+		</div>
+		<div class="modal-content ">
+			<div class="row">
+				<p class="grey-text col s12 m10 offset-m1 l8 offset-l2"><i>Utilisez le bouton pour renvoyer vers un
+					autre site internet ou vers un fichier hébergé avec un système de cloud.</i></p>
+			</div>
+			<form class="editBtnForm" id="editBtnForm-{{@id}}">
+				<div class="row" style="margin-top: 30px">
+					<div class="input-field col s12 m10 offset-m1 l8 offset-l2">
+						<input name="label" type="text" required class="validate grey-text text-darken-3" value="{{@fields['btnLabel']['value'] }}">
+						<label for="label">Texte du bouton</label>
+					</div>
+				</div>
+				<div class="row" style="margin-top: 30px">
+					<div class="input-field col s12 m10 offset-m1 l8 offset-l2">
+						<input name="value" type="text" required class="validate grey-text text-darken-3" value="{{@fields['btnValue']['value'] }}">
+						<label for="value">Lien vers lequel renvoie le bouton</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 center-align">
+						<button type="submit" class="btn frama-orangepurple hover-frama- waves-effect waves-light btn">
+							<i class="material-icons right">done</i>Valider
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</check>

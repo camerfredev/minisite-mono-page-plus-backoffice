@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<include href="./base/includes/head.htm"/>
+<body>
+{{@lastAnchor}}
+{* ajout des boutons supérieurs si l'utilisateur est connecté en tant qu'admin*}
+<include if="{{ @isAdmin }}" href="./base/includes/adminButtons.htm"/>
+<include if="{{ @isAdmin }}" href="./base/helpBtn/helpBtn.htm"/>
+
+<include href="./base/nav/nav.htm"/>
+<div class="" style="margin-top: 64px">
+	<repeat group="{{ @siteStructure }}" key="{{ @position }}" value="{{ @section}}">
+		<check if="{{ @section['id'] === 'footer' }}">
+			<true>
+
+
+				<include href="./base/footer/footer.htm"/>
+
+
+
+			</true>
+			<false>
+				<section class="relative moduleSectionContainer" id="{{@section['id']}}">
+					<include if="{{ @isAdminPage }}" href="./base/editBtns/addSection.htm" with="reference={{@section['id']}},positionReference='before'"/>
+
+					<include href="{{ './modules/' . @section['module'] . '/module.htm' }}" with="id={{@section['id']}},fields={{@section['fields']}}"/>
+					<check if="{{ @isAdminPage }}">
+
+						<include href="./base/generalModuleOptions/generalModuleOptions.htm" with="id={{@section['id']}}"/>
+					</check>
+
+
+				</section>
+			</false>
+
+		</check>
+	</repeat>
+	<a class="fixed btn-floating btn-large menu-background waves-effect waves-light tooltipped light-shadow" data-position="left"
+	   data-delay="350" data-tooltip="retour haut de page" id="ScrollTopBtn" style="opacity : 0; z-index: 200 !important; bottom: 20px; right: 20px ">
+		<i class="material-icons second-color medium">arrow_upward</i>
+	</a>
+</div>
+
+<check if="{{ @isAdminPage }}">
+	<include href="./base/editBtns/addSectionModal.htm"/>
+	<include href="./base/includes/saveBtn.htm"/>
+	<include href="./base/generalModuleOptions/addToMenuModal.htm"/>
+	<include href="./base/uglyForm/uglyForm.htm"/>
+	<include href="./base/siteOptionsModal/siteOptionsModal.htm"/>
+</check>
+<include if="{{ @isAdmin }}" href="./base/helpBtn/helpModal.htm"/>
+<!--  Scripts-->
+<include href="./base/includes/scripts.htm"/>
+<include href="./base/siteOptionsModal/mediaManagment/croppingModal.htm" />
+</body>
+</html>

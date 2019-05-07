@@ -1,0 +1,36 @@
+{
+    "font": {
+        "name": "Standard",
+        "title": {
+            "name": "Roboto",
+            "local": "Roboto",
+            "css1": "Roboto",
+            "css2": "sans-serif"
+        },
+        "main": {
+            "name": "Roboto",
+            "local": "Roboto",
+            "css1": "Roboto",
+            "css2": "sans-serif"
+        }
+    },
+    "theme": {
+        "name": "Hard Sun",
+        "menu_background": "#FFFFFF",
+        "main_background": "#FFFFFF",
+        "main_color": "#444444",
+        "contrasted_color": "#FFFFFF",
+        "second_background": "#FFB839",
+        "second_color": "#563529"
+    },
+    "params": {
+        "title": "NotreDameDeParisEnWeb",
+        "titleSize": "small",
+        "favIcon": "",
+        "siteLogo": "",
+        "lang": "fr_FR",
+        "description": "Site",
+        "keywords": "site, internet, CMS, framasite",
+        "isPublished": "true"
+    }
+}

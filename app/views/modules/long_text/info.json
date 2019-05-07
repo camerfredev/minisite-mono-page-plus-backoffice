@@ -1,0 +1,17 @@
+{
+  "name": "long_text",
+  "title": "Section texte à colonnes",
+  "description": "Module permettant d'afficher du contenu textuel volumineux, avec un affichage en colonne facilitant la lecture",
+  "tags":"moduleTag-text",
+  "hidden" : false,
+  "fields": {
+    "title": {
+      "type": "text",
+      "value": "<h5>Section texte à colonnes</h5>"
+    },
+    "content": {
+      "type": "text",
+      "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?\t\t\t\t</p>\t\t\t\t"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "videobg",
+  "title": "Section avec vidéo d'arrière plan",
+  "description": "Module permettant de présenter du contenu avec une vidéo en arrière plan hébergée sur youtube",
+  "tags":"moduleTag-video",
+  "hidden" : false,
+  "fields": {
+    "text": {
+      "type": "text",
+      "value": "<h4 style=\"text-align:center;\">Module Vidéo d'arrière plan</h4>"
+    },
+    "VideobgType": {
+      "type": "text",
+      "value": "youtube"
+    },
+    "VideobgId": {
+      "type": "text",
+      "value": "iuVUzg6x2yo"
+    },
+    "filter": {
+      "type": "text",
+      "value": "filter-grille"
+    }
+  }
+}

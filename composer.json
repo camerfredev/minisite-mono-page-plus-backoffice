@@ -1,0 +1,20 @@
+{
+	"name": "robinc/prettynoemiecms",
+	"description": "CMS offrant à ses utilisateurs une solution ergonomique, simple et élégante pour construire en un rien de temps des sites vitrines responsives au design moderne.",
+	"homepage": "https://frama.site",
+	"license": "GPL-3.0",
+  "require": {
+    "php": ">=5.4",
+    "ezyang/htmlpurifier":"^4.9",
+    "bcosca/fatfree": "^3.6"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "~2.0"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://framagit.org/framasoft/PrettyNoemieCMS"
+    }
+  ]
+}

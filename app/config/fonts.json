@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Standard",
+    "title": {
+      "name": "Roboto",
+      "local": "Roboto",
+      "css1": "Roboto",
+      "css2": "sans-serif"
+    },
+    "main": {
+      "name": "Roboto",
+      "local": "Roboto",
+      "css1": "Roboto",
+      "css2": "sans-serif"
+    }
+  },
+  {
+    "name": "Artistic",
+    "title": {
+      "name": "Megrim",
+      "local": "Megrim",
+      "css1": "Megrim",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Poiret One",
+      "local": "PoiretOne",
+      "css1": "Poiret One",
+      "css2": "cursive"
+    }
+  },
+  {
+    "name": "handy",
+    "title": {
+      "name": "Walter Turncoat",
+      "local": "WalterTurncoat",
+      "css1": "Walter Turncoat",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Delius Swash Caps",
+      "local": "DeliusSwashCaps",
+      "css1": "Delius Swash Caps",
+      "css2": "cursive"
+    }
+  },
+  {
+    "name": "Pro",
+    "title": {
+      "name": "Maven Pro",
+      "local": "MavenPro",
+      "css1": "Maven Pro",
+      "css2": "sans-serif"
+    },
+    "main": {
+      "name": "Maven Pro",
+      "local": "MavenPro",
+      "css1": "Maven Pro",
+      "css2": "sans-serif"
+    }
+  },
+  {
+    "name": "Nerd",
+    "title": {
+      "name": "Cabin Sketch",
+      "local": "CabinSketch",
+      "css1": "Cabin Sketch",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Fira Mono",
+      "local": "FiraMono",
+      "css1": "Fira Mono",
+      "css2": "monospace"
+    }
+  },
+  {
+    "name": "Soft",
+    "title": {
+      "name": "Poiret One",
+      "local": "PoiretOne",
+      "css1": "Poiret One",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Poiret One",
+      "local": "PoiretOne",
+      "css1": "Poiret One",
+      "css2": "cursive"
+    }
+  },
+  {
+    "name": "Tea Times",
+    "title": {
+      "name": "Spectral SC",
+      "local": "SpectralSC",
+      "css1": "Spectral SC",
+      "css2": "serif"
+    },
+    "main": {
+      "name": "Crimson Text",
+      "local": "CrimsonText",
+      "css1": "Crimson Text",
+      "css2": "serif"
+    }
+  },
+  {
+    "name": "Bungee",
+    "title": {
+      "name": "Bungee Inline",
+      "local": "BungeeInline",
+      "css1": "Bungee Inline",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Offside",
+      "local": "Offside",
+      "css1": "Offside",
+      "css2": "cursive"
+    }
+  },
+  {
+    "name": "Disco",
+    "title": {
+      "name": "Monoton",
+      "local": "Monoton",
+      "css1": "Monoton",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Lobster",
+      "local": "Lobster",
+      "css1": "Lobster",
+      "css2": "cursive"
+    }
+  },
+  {
+    "name": "Indus",
+    "title": {
+      "name": "Black Ops One",
+      "local": "BlackOpsOne",
+      "css1": "Black Ops One",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Oswald",
+      "local": "Oswald",
+      "css1": "Oswald",
+      "css2": "sans-serif"
+    }
+  },
+  {
+    "name": "Campus",
+    "title": {
+      "name": "Graduate",
+      "local": "Graduate",
+      "css1": "Graduate",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Open Sans",
+      "local": "OpenSans",
+      "css1": "Open Sans",
+      "css2": "sans-serif"
+    }
+  },
+  {
+    "name": "Smart",
+    "title": {
+      "name": "Amatic SC",
+      "local": "AmaticSC",
+      "css1": "Amatic SC",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Josefin Slab",
+      "local": "JosefinSlab",
+      "css1": "Josefin Slab",
+      "css2": "serif"
+    }
+  },
+  {
+    "name": "Noemie",
+    "title": {
+      "name": "Lobster",
+      "local": "Lobster",
+      "css1": "Lobster",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Handlee",
+      "local": "Handlee",
+      "css1": "Handlee",
+      "css2": "cursive"
+    }
+  },
+  {
+    "name": "Muffin",
+    "title": {
+      "name": "Sacramento",
+      "local": "Sacramento",
+      "css1": "Sacramento",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Josefin Slab",
+      "local": "JosefinSlab",
+      "css1": "Josefin Slab",
+      "css2": "serif"
+    }
+  },
+  {
+    "name": "D I Y",
+    "title": {
+      "name": "Fredericka the Great",
+      "local": "FrederickatheGreat",
+      "css1": "Fredericka the Great",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Love Ya Like A Sister",
+      "local": "LoveYaLikeASister",
+      "css1": "Love Ya Like A Sister",
+      "css2": "cursive"
+    }
+  },
+  {
+    "name": "Market",
+    "title": {
+      "name": "Chelsea Market",
+      "local": "ChelseaMarket",
+      "css1": "Chelsea Market",
+      "css2": "cursive"
+    },
+    "main": {
+      "name": "Josefin Slab",
+      "local": "JosefinSlab",
+      "css1": "Josefin Slab",
+      "css2": "serif"
+    }
+  }
+]

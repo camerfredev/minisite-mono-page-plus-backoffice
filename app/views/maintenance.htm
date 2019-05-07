@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<include href="./base/includes/head.htm"/>
+<body>
+{{@lastAnchor}}
+{* ajout des boutons supérieurs si l'utilisateur est connecté en tant qu'admin*}
+<include if="{{ @isAdmin }}" href="./base/includes/adminButtons.htm"/>
+<include if="{{ @isAdmin }}" href="./base/helpBtn/helpBtn.htm"/>
+
+<include href="./base/nav/nav.htm"/>
+
+	<section class="relative moduleSectionContainer" >
+		<div class="second-background" style="min-height: 90vh">
+			<div class="container module " >
+				<div class="section" style="padding-top: 120px !important;padding-bottom: 120px !important;">
+					<div class="row valign-wrapper no-margin ">
+						<div class="col s12 m8 offset-m2 relative">
+							<div class="main-background light-shadow relative center-align" style="border-radius: 10px; padding: 30px; ">
+								<i class="material-icons second-color center-align large">build</i>
+								<div class="   main-font center-align" id="moduleValue-focus">
+
+									<h4 class="second-color">{{ @siteOptions['params']['title']}} est en maintenance...</h4>
+									<p class="main-color">Nous vous prions de nous excuser pour la gène occasionnée, et nous vous invitons à revenir bientôt.</p>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</section>
+</repeat>
+
+
+<include href="./base/footer/footer.htm"/>
+<check if="{{ @isAdminPage }}">
+	<include  href="./base/editBtns/addSectionModal.htm"/>
+	<include  href="./base/includes/saveBtn.htm"/>
+	<include href="./base/generalModuleOptions/addToMenuModal.htm"/>
+	<include href="./base/uglyForm/uglyForm.htm" />
+	<include href="./base/siteOptionsModal/siteOptionsModal.htm" />
+</check>
+<include if="{{ @isAdmin }}" href="./base/helpBtn/helpModal.htm"/>
+<!--  Scripts-->
+<include href="./base/includes/scripts.htm"/>
+
+</body>
+</html>

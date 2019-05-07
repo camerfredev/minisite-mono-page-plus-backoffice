@@ -1,0 +1,9 @@
+{
+  "name": "free_space",
+  "title": "Espace libre",
+  "description": "un module vide de la couleur de votre arrière plan pour aérer votre contenu",
+  "tags":"moduleTag-special",
+  "hidden" : false,
+  "fields": {
+  }
+}

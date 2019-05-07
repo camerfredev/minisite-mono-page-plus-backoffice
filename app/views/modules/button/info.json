@@ -1,0 +1,25 @@
+{
+  "name": "button",
+  "title": "Module Bouton",
+  "description": "Module permettant d'afficher un bouton avec un lien configurable, avec une image de fond optionnelle",
+  "hidden" : false,
+  "tags" : "moduleTag-special",
+  "fields": {
+    "imgUrl": {
+      "type": "text",
+      "value": ""
+    },
+    "text": {
+      "type": "text",
+      "value": "<p style=\"text-align:center;\">Vous avez des compétences en développement ou en design ?</p><p style=\"text-align:center;\">Des idées pour améliorer cet outil ?</p><h5 style=\"text-align:center;\">Rejoignez-nous sur Framagit, c’est ouvert à toutes et à tous !</p>"
+    },
+    "btnLabel": {
+      "type": "text",
+      "value": "Contribuer à cet outil !"
+    },
+    "btnValue": {
+      "type": "text",
+      "value": "https://framagit.org/framasoft/PrettyNoemieCMS"
+    }
+  }
+}

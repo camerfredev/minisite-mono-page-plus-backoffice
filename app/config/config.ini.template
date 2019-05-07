@@ -1,0 +1,7 @@
+[globals]
+DEBUG=3
+UI=app/views/
+AUTOLOAD=app/controllers/;app/fixtures/
+SitesFolder = sites/
+isMediaPathModified =
+

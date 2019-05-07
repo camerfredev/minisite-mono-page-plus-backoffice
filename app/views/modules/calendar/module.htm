@@ -1,0 +1,129 @@
+<div class="main-background relative module" style="overflow: hidden">
+	<div class="container">
+
+		<div class="section relative" style="padding-top: 60px !important;padding-bottom: 60px !important; z-index: 10">
+			<div class="row no-margin  relative">
+				<div class="col s12 xl4" style="padding: 0 25px 0 0  !important;">
+					<div class="row">
+						<div class="col s12  second-color title-font editable " id="moduleValue-title">
+							{{@fields['title']['value'] | raw}}
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12  second-color main-font editable" id="moduleValue-content" style="text-align: justify">
+							{{@fields['content']['value'] | raw}}
+						</div>
+					</div>
+				</div>
+				<div class="relative col s12 xl8 " >
+					<check if="{{ @isAdminPage }}">
+						<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn modal-trigger" href="#editAgendaModal-{{@id}}" data-position="left"
+						   data-delay="250" data-tooltip="Importer l'agenda" style=" right: 0px; top: 0px; z-index: 1000">
+							<i class="material-icons">settings</i></a>
+
+					</check>
+					<div class="agenda-container" id="agendaContainer-{{@id}}">
+						<check if="{{ @fields['agendaType']['value'] == 'google calendar' }}">
+							<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src={{@fields['agendaId']['value']}}&amp;color=%230F4B38&amp" style="border-width:0" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+						</check>
+						<check if="{{ @fields['agendaType']['value'] == 'framagenda' }}">
+
+							<iframe width="400" height="200" src="https://framagenda.org/index.php/apps/calendar/embed/{{@fields['agendaId']['value']}}"></iframe>
+						</check>
+
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+<check if="{{ @isAdminPage }}">
+	<div id="editAgendaModal-{{@id}}" class=" editAgendaModal modal modal-fixed-header ">
+		<div class="modal-header" style="z-index: 6001">
+			<h5 class="white-text" style="padding: 15px !important; margin: 0 !important;">Editer l'agenda</h5>
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text">clear</i></a>
+		</div>
+		<div class="modal-content ">
+			<div class="row  tooltipped frama-purple shadow-bottom" data-position="bottom"
+				 data-delay="250" data-tooltip="Copiez l'adresse de votre agenda" style="padding: 15px; border-radius: 5px; ">
+				<div class="row">
+					<div class="col s12 m6">
+						<h5 class="center-align white-text"><b>Google Calendar</b></h5>
+						<ul>
+							<li class="white-text">Rendez vous sur votre Google Calendar</li>
+							<li class="white-text">Cliquez sur settings en haut a droite
+								"<i class="material-icons white-text tiny">settings</i>"</li>
+							<li class="white-text">Selectionnez le calendrier de votre choix</li>
+							<li class="white-text">Cochez la case <i><b>Rendre disponible publiquement</b></i></li>
+							<li class="white-text"><b>Dans la section Intégrer</b> copiez l' <i><b>URL publique de cet agenda</b></i> puis collez l'adresse
+								donnée ci-dessous <br><i>( Attention, <b>ce n'est pas</b> le lien donné dans "obtenir un lien partageable" )</i>
+							</li>
+						</ul>
+					</div>
+					<div class="col s12 m6">
+						<h5 class="center-align white-text"><b>Framagenda</b></h5>
+						<ul>
+							<li class="white-text">Rendez vous sur votre Framagenda</li>
+							<li class="white-text">Cochez la case <i><b>Partager un lien Accès public</b></i></li>
+							<li class="white-text">Cliquez sur <i><b>obtenir le lien partageable</b></i> puis copiez l'adresse
+								donnée
+							</li>
+							<li class="white-text">Cliquez sur "<i class="material-icons white-text tiny">link</i>" qui vous
+								dirigera
+								vers la vue publique puis copiez l'adresse en barre d'adresse
+							</li>
+							<li class="white-text">Copiez l'adresse de la barre d'adresse</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 m6">
+						<img class="responsive-img no-padding no-margin" style="border-radius: 4px" src="app/views/modules/calendar/capture1.png" alt="capture d'écran youtube">
+					</div>
+
+					<div class="col s12 m6">
+						<img class="responsive-img no-padding no-margin" style="border-radius: 4px" src="app/views/modules/calendar/capture2.png" alt="capture d'écran youtube">
+					</div>
+				</div>
+			</div>
+
+			<p class="center-align"><i class="material-icons frama-purple-text ">warning</i></p>
+			<p class="frama-purple-text center-align">Les <b>Framagendas</b> ne sont pas encore compatibles avec la
+				majorité des navigateurs et ne fonctionnent que sous Firefox</p>
+
+
+			<form class="editAgendaForm" id="editAgendaForm-{{@id}}">
+				<div class="row" style="margin-top: 30px">
+					<div class="input-field col s12 m4">
+
+						<select name="agendaType">
+							<option value="google calendar" selected>Google Calendar</option>
+							<option value="framagenda">Framagenda</option>
+						</select>
+
+						<label>Sélectionnez la source de votre agenda</label>
+					</div>
+					<div class="input-field col s12 m8 ">
+						<input name="agendaUrl" type="url" required class="validate grey-text text-darken-3" placeholder="https://calendar.google.com/calendar/htmlembed?src=%23contacts%40group.v.calendar.google.com&ctz=Europe%2FParis">
+						<label for="value">Collez le lien public de votre agenda <b>ici</b></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 center-align">
+						<p class="frama-orange-text" id="errorAgenda-{{@id}}"></p>
+					</div>
+					<div class="col s12 center-align">
+						<button type="submit" class="btn frama-orange hover-frama-purple waves-effect waves-light btn">
+							<i class="material-icons right">done</i>Valider
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</check>

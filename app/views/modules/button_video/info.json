@@ -1,0 +1,37 @@
+{
+  "name": "button_video",
+  "title": "Bouton et vidéo d'arrière plan",
+  "description": "Module permettant d'afficher un bouton avec un lien configurable, avec une vidéo d'arrière plan",
+  "hidden": false,
+  "tags": "moduleTag-special moduleTag-video",
+  "fields": {
+    "VideobgType": {
+      "type": "text",
+      "value": "youtube"
+    },
+    "VideobgId": {
+      "type": "text",
+      "value": "iuVUzg6x2yo"
+    },
+    "filter": {
+      "type": "text",
+      "value": "filter-grille"
+    },
+    "text": {
+      "type": "text",
+      "value": "<p style=\"text-align:right;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam </p>"
+    },
+    "title": {
+      "type": "text",
+      "value": "<h5 style=\"text-align:right;\">Bouton et vidéo d'arrière plan</h5>"
+    },
+    "btnLabel": {
+      "type": "text",
+      "value": "Cliquez ici !"
+    },
+    "btnValue": {
+      "type": "text",
+      "value": "https://framasoft.org/"
+    }
+  }
+}

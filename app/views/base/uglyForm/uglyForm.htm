@@ -1,0 +1,9 @@
+<form method="POST" action="admin/edit/save-modifs" class="displaynone" id="uglyForm">
+	<input type="text" class="displaynone" name="CSRFToken" value="{{@CSRFToken}}">
+	<input type="text" name ="hash" class="displaynone">
+	<repeat group="{{ @siteStructure }}" value="{{ @section }}">
+		<repeat group="{{ @section['fields'] }}" key=" {{@fieldName}}" value="{{ @field }}">
+			<input name="{{'uglyForm-'.@section['id'] . '-' .@fieldName}}" type="{{@field['type']}}" value="{{@field['value']}}">
+		</repeat>
+	</repeat>
+</form>

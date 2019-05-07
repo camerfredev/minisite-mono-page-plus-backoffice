@@ -1,0 +1,40 @@
+<div class="main-background">
+	<div class="container module">
+		<div class="section" style="padding-top: 40px !important;padding-bottom: 40px !important;">
+			<div class="row no-margin competencesShowOnScroll" id="CompetencesShowOnScroll-{{@id}}">
+
+				<repeat group="{{ [0,1,2,3,4,5,6,7,8,9,10,11] }}" value="{{ @index }}">
+					<check if="{{ @fields['label'.@index]['value'] || @isAdminPage }}">
+						<div class="col s12 m4 l3 no-padding">
+							<div class="row " style="; width: 90% ;margin:  -10px 0 !important;">
+								<div class="main-color main-font editable " style="min-height: 2em !important;" id="moduleValue-label{{@index}}">
+									{{@fields['label'.@index]['value'] | raw}}
+								</div>
+							</div>
+							<div class="row competenceBlock" id="competenceBlock-{{@id}}-{{@index}}" value="{{@fields['value'.@index]['value']}}" style="margin: 0 0 5px 0 !important;">
+								<repeat group="{{ [0,1,2,3,4] }}" value="{{ @value }}">
+									<span class="" style="padding: 0 12px 0 0px; {{ @isAdminPage? 'cursor: pointer' :''}}">
+										<i class="material-icons tiny second-color competenceValue" id="competenceValue-{{@id}}-{{@index}}-{{@value}}">
+											<check if="{{ @value <= @fields['value'.@index]['value'] }}">
+												<true>
+													lens
+												</true>
+												<false>
+													panorama_fish_eye
+												</false>
+											</check>
+										</i>
+									</span>
+								</repeat>
+							</div>
+
+						</div>
+					</check>
+				</repeat>
+
+
+			</div>
+
+		</div>
+	</div>
+</div>

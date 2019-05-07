@@ -1,0 +1,58 @@
+<div class="main-background">
+
+	<check if="{{ @isAdminPage }}">
+		<div class="row infoModule no-margin" >
+			<p class=" white-text no-margin relative center-align"
+			   style="font-size: small;">
+				<i>Seuls les items avec un texte complété seront visibles par vos visiteurs</i>
+			</p>
+		</div>
+	</check>
+	<div class="container module">
+		<div class="section" style="padding-top: 40px !important;padding-bottom: 40px !important;">
+
+			<!--   Icon Section   -->
+			<div class="row center-align">
+				<repeat group="{{ [1,2,3] }}" value="{{ @index }}">
+					<check if="{{ @fields['content'.@index]['value'] || @isAdminPage}}">
+						<div class="three-block">
+							<div class="icon-block center-align" style="text-align: center; width: 100%">
+								<div class="relative">
+									<check if="{{ @isAdminPage }}">
+										<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn editIconBtn" data-position="left"
+										   data-delay="250" data-tooltip="Changer l'icône" id="editIcon-{{@id}}-icon{{@index}}" style=" right: 40px; top: -15px; z-index: 1000">
+											<i class="material-icons">edit</i>
+										</a>
+									</check>
+
+									<h2 class="center second-color center-align">
+										<i class="material-icons" id="moduleValue-icon{{@index}}">{{@fields['icon'.@index]['value']}}</i>
+									</h2>
+								</div>
+								<div class=" main-color main-font editable center-align" id="moduleValue-content{{@index}}">
+									{{@fields['content'.@index]['value']| raw}}
+								</div>
+							</div>
+						</div>
+					</check>
+
+				</repeat>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<check if="{{ @isAdminPage }}">
+	<div id="chooseIconModal" class="modal modal-fixed-footer big-modal" style="background-color: rgba(255,255,255,0.90) !important;">
+		<div class="modal-content ">
+			<h4 class="grey-text">Sélectionner votre icône</h4>
+			<div class="row" id="iconList">
+
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">clears</i></a>
+		</div>
+	</div>
+</check>

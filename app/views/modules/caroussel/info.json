@@ -1,0 +1,73 @@
+{
+  "name": "caroussel",
+  "title": "Carrousel",
+  "tags" : "moduleTag-animated moduleTag-img",
+  "description": "Module permettant d'afficher un carousel d'images ",
+  "hidden" : false,
+  "fields": {
+    "text0": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl0": {
+      "type": "text",
+      "value": "app/views/modules/paralax/background3.jpg"
+    },
+    "text1": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl1": {
+      "type": "text",
+      "value": "app/views/modules/paralax/background3.jpg"
+    },
+    "text2": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl2": {
+      "type": "text",
+      "value": "app/views/modules/paralax/background3.jpg"
+    },
+    "text3": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl3": {
+      "type": "text",
+      "value": ""
+    },
+    "text4": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl4": {
+      "type": "text",
+      "value": ""
+    },
+    "text5": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl5": {
+      "type": "text",
+      "value": ""
+    },
+    "text6": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl6": {
+      "type": "text",
+      "value": ""
+    },
+    "text7": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl7": {
+      "type": "text",
+      "value": ""
+    }
+  }
+}

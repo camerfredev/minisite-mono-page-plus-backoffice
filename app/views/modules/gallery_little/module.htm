@@ -1,0 +1,41 @@
+<link href="public/js/lightbox/css/lightbox.css" rel="stylesheet">
+<div class="main-background module">
+	<div class="container" style="padding: 30px 0">
+		<check if="{{ @isAdminPage }}">
+			<div class="row infoModule" style="margin: 0 5px 5px 05px !important;">
+				<p class=" white-text no-margin relative center-align"
+				   style="font-size: small;">
+					<i>Seules les images complétées seront visibles par vos visiteurs</i>
+				</p>
+			</div>
+		</check>
+
+		<div class="columnContainer gallery-little"  >
+			<repeat group="{{ [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58,59,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99] }}" value="{{ @index }}">
+				<check if="{{ @fields['imgUrl'.@index]['value'] || @isAdminPage }}">
+					<div class="relative carousselImage" style="padding: 5px">
+						<check if="{{ @isAdminPage }}">
+							<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn editGalleryImage" data-position="top"
+							   data-delay="250" data-tooltip="modifier l'image" id="editGalleryImage-{{@id}}-{{@index}}" style=" left: 10px; top: 10px; z-index: 500">
+								<i class="material-icons">image</i></a>
+							<check if="{{ @fields['imgUrl'.@index]['value']}}">
+								<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn removeGalleryImage" data-position="top"
+								   data-delay="250" data-tooltip="retirer l'image" id="removeGalleryImage-{{@id}}-imgUrl{{@index}}" style=" left: 60px; top: 10px; z-index: 500">
+									<i class="material-icons">clear</i></a>
+							</check>
+
+						</check>
+							<a  class="responsive-img" style="cursor: zoom-in" data-lightbox="galery-{{@id}}"  width="100%" data-caption="{{@fields['imgUrl'.@index]['value'] | imgAlt}}"  href="{{@fields['imgUrl'.@index]['value']? @fields['imgUrl'.@index]['value'] : 'app/views/modules/gallery/default.jpg'}}" >
+								<img class="responsive-img " id="moduleValue-imgUrl{{@index}}" width="100%" data-caption="{{@fields['imgUrl'.@index]['value'] | imgAlt}}"  src="{{@fields['imgUrl'.@index]['value']? @fields['imgUrl'.@index]['value'] : 'app/views/modules/gallery/default.jpg'}}" alt="{{@fields['imgUrl'.@index]['value'] | imgAlt}}">
+
+
+							</a>
+					</div>
+				</check>
+
+			</repeat>
+		</div>
+	</div>
+
+</div>
+

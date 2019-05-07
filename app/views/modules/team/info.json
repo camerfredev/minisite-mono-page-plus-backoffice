@@ -1,0 +1,37 @@
+{
+  "name": "team",
+  "title": "Notre équipe",
+  "description": "Module permettant de présenter trois membres de votre équipe",
+  "tags":"moduleTag-text moduleTag-img",
+  "hidden" : false,
+  "fields": {
+    "title": {
+      "type": "text",
+      "value": "<h4>Notre Equipe</h4>"
+    },
+    "imgUrl1": {
+      "type": "text",
+      "value": "app/views/modules/photo_cv/default-profile.png"
+    },
+    "content1": {
+      "type": "text",
+      "value": "<h5>Member Of Team</h5><h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, </h6>"
+    },
+    "imgUrl2": {
+      "type": "text",
+      "value": "app/views/modules/photo_cv/default-profile.png"
+    },
+    "content2": {
+      "type": "text",
+      "value": "<h5>Member Of Team</h5><h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere,</h6>"
+    },
+    "imgUrl3": {
+      "type": "text",
+      "value": "app/views/modules/photo_cv/default-profile.png"
+    },
+    "content3": {
+      "type": "text",
+      "value": "<h5>Member Of Team</h5><h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6|"
+    }
+  }
+}

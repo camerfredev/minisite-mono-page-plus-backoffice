@@ -1,0 +1,79 @@
+<div class="main-background">
+	<div class="container module ">
+		<div class="section" style="padding-top: 40px !important;padding-bottom: 20px !important;">
+			<div class="row">
+				<div class="col s12 xl4 relative  " style="padding-bottom: 30px">
+					<div class=" main-color main-font editable relative " id="moduleValue-text" style="width: 100%; ">
+						{{@fields['text']['value'] | raw}}
+					</div>
+				</div>
+
+				<div class="col s12 xl8  main-color  " style="background-color: rgba(0,0,0,0.16); border-radius: 4px !important;">
+					<form action="contact" method="post" class="relative" id="contactForm"
+						  style="padding: 30px !important; margin: 0  !important; ">
+						<check if="{{ @isAdminPage }}">
+							<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn modal-trigger" data-position="left" id="editMailBtn"
+							   data-delay="250" data-tooltip="Choisissez l'adresse à laquelle vous souhaitez que les mails soient envoyés" href="#editEmailModal" style=" right: -25px; top: -15px; z-index: 1000">
+								<i class="material-icons">build</i>
+							</a>
+						</check>
+						<input type="text" name="sectionId" value="{{@id}}" class="displaynone">
+						<div class="input-field col s12 l6 ">
+							<input type="text" id="contactForm-name" name="name" required>
+							<label for="contactForm-name" class="main-font">Votre nom</label>
+						</div>
+						<div class="input-field col s12 l6 ">
+							<input type="email" id="contactForm-email" name="email" required>
+							<label for="contactForm-email" class="main-font">Votre adresse email</label>
+						</div>
+						<div class="input-field col s12 ">
+							<textarea name="content" id="contactForm-content" class="materialize-textarea" required></textarea>
+							<label for="contactForm-content" class="main-font">Votre Message</label>
+						</div>
+						<div class="col s12">
+							<div class="row">
+
+								<div class="input-field col s12 m7" style="padding-right: 0 !important;">
+									<input type="text" id="no-robot" name="no-robot" required>
+									<label for="no-robot" class="main-font">Anti-spam : Combien font deux fois deux ?</label>
+								</div>
+								<div class="col s12 m5 center-align" style="padding-left: 0 !important;">
+									<button type="submit" class="btn-large second-background second-color " style="margin: 20px -20px 0 0 !important;">
+										<i class="material-icons left">send</i>envoyer
+									</button>
+								</div>
+							</div>
+						</div>
+
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<check if="{{ @isAdminPage }}">
+	<div id="editEmailModal" class="modal modal-fixed-header small-modal">
+		<div class="modal-header" style="z-index: 6001">
+			<h5 class="white-text" style="padding: 15px !important; margin: 0 !important;">Configuration du formulaire de contact</h5>
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text">clear</i></a>
+		</div>
+		<div class="modal-content ">
+			<form class="editEmailForm" id="editEmailForm-{{@id}}">
+				<div class="row" style="margin-top: 30px">
+					<div class="input-field col s12 m10 offset-m1 l8 offset-l2">
+						<input id="adminEmail" type="email" required class="validate grey-text text-darken-3" value="{{@fields['email']['value'] }}">
+						<label for="adminEmail">Adresse à laquelle seront expédiés les mails de contact</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 center-align">
+						<button type="submit"  class="btn frama-orange hover-frama-purple waves-effect waves-light btn" id="validEmailModal">
+							<i class="material-icons right">done</i>Valider
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</check>

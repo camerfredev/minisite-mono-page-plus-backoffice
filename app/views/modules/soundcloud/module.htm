@@ -1,0 +1,96 @@
+<div class="second-background relative module" style="overflow: hidden">
+	<div class="container">
+
+		<div class="section relative" style="padding-top: 45px !important;padding-bottom: 45px !important; z-index: 10">
+			<div class="row no-margin">
+				<div class="relative col s12 l8 relative">
+					<check if="{{ @isAdminPage }}">
+						<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn modal-trigger" href="#editAudioModal-{{@id}}" data-position="left"
+						   data-delay="250" data-tooltip="Paramètres du lecteur audio" style=" right: -20px; top: -10px; z-index: 1000">
+							<i class="material-icons">music_video</i></a>
+					</check>
+					<div class="audio-container" id="audioContainer-{{@id}}" style="height: 188px; overflow-y: scroll">
+						<check if="{{ @fields['audioType']['value'] == 'soundcloud'}}">
+							<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="{{@fields['audioUrl']['value']}}"></iframe>
+						</check>
+					</div>
+				</div>
+				<div class="col s12 l4" style="padding: 0 0  0 25px !important;">
+					<div class="row center-align">
+						<div class="col s12  second-color title-font editable " id="moduleValue-title">
+							{{@fields['title']['value'] | raw}}
+						</div>
+					</div>
+					<div class="row no-margin">
+						<div class="col s12  second-color main-font editable" id="moduleValue-content" style="text-align: justify">
+							{{@fields['content']['value'] | raw}}
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<check if="{{ @isAdminPage }}">
+	<div id="editAudioModal-{{@id}}" class="editAudioModal modal modal-fixed-header ">
+		<div class="modal-header" style="z-index: 6001">
+			<h5 class="white-text" style="padding: 15px !important; margin: 0 !important;">Choix du contenu audio</h5>
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text">clear</i></a>
+		</div>
+		<div class="modal-content ">
+			<div class="row valign-wrapper tooltipped frama-purple shadow-bottom" data-position="bottom"
+				 data-delay="250" data-tooltip="Cliquez sur partager en bas de la piste audio ou de la playlist que vous souhaitez intégrer" style="padding: 15px; border-radius: 5px; ">
+				<div class="col s12 m2">
+					<i class="material-icons white-text medium">touch_app</i></p>
+				</div>
+				<div class="col s12 m10 no-padding">
+					<img class="responsive-img no-padding no-margin" style="border-radius: 4px" src="app/views/modules/soundcloud/capture1.png" alt="capture d'écran soundcloud">
+				</div>
+			</div>
+			<div class="row valign-wrapper tooltipped frama-purple shadow-bottom" data-position="bottom"
+				 data-delay="250" data-tooltip="Cliquez ensuite sur integrer dans la fenetre qui s'ouvre" style="padding: 15px; border-radius: 5px; ">
+				<div class="col s12 m2">
+					<i class="material-icons white-text medium">touch_app</i></p>
+				</div>
+				<div class="col s12 m10 no-padding">
+					<img class="responsive-img no-padding no-margin" style="border-radius: 4px" src="app/views/modules/soundcloud/capture2.png" alt="capture d'écran soundcloud">
+				</div>
+			</div>
+			<div class="row valign-wrapper tooltipped frama-purple shadow-bottom" data-position="bottom"
+				 data-delay="250" data-tooltip="Copiez le lien de partage de votre piste audio dans la barre d'adresse" style="padding: 15px; border-radius: 5px; ">
+				<div class="col s12 m2">
+					<i class="material-icons white-text medium">content_cut</i></p>
+				</div>
+				<div class="col s12 m10 no-padding">
+					<img class="responsive-img no-padding no-margin" style="border-radius: 4px" src="app/views/modules/soundcloud/capture3.png" alt="capture d'écran soundcloud">
+				</div>
+			</div>
+			<form class="editAudioForm" id="editAudioForm-{{@id}}">
+				<p class="frama-purple-text center-align">Seules les lecteurs de <b>SoundCloud</b> fonctionnent actuellement
+					pour ce module</p>
+				<div class="row" style="margin-top: 30px">
+					<div class="input-field col s12 m4 displaynone">
+
+						<select name="audioType">
+							<option value="soundcloud" selected>SoundCloud</option>
+						</select>
+
+						<label>Sélectionnez la source de votre lecteur audio</label>
+					</div>
+					<div class="input-field col s12 m8 offset-m2">
+						<input name="audioIframe" type="text" required class="validate grey-text text-darken-3" value="{{@fields['btnValue']['value'] }}">
+						<label>Collez le lien vers votre lecteur audio <b>ici</b></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 center-align">
+						<button type="submit" class="btn frama-orange hover-frama-purple waves-effect waves-light btn">
+							<i class="material-icons right">done</i>Valider
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</check>

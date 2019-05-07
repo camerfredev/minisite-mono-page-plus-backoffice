@@ -1,0 +1,18 @@
+{
+  "name" : "paralax",
+  "title" : "paralax",
+  "description" : "Module permettant d'afficher un texte court et percutant avec une image de fond qui se déplace de manière élégante",
+  "tags":"moduleTag-img moduleTag-animated",
+  "hidden" : false,
+  "fields" : {
+    "text" : {
+      "type": "text",
+      "value": "<h4>Bienvenue sur votre site web</h4>"
+    },
+    "imgUrl" : {
+      "type": "text",
+      "value" : "app/views/modules/paralax/background3.jpg"
+
+    }
+  }
+}

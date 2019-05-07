@@ -1,0 +1,57 @@
+{
+  "name": "timeline",
+  "title": "Timeline",
+  "description": "Une frise chronologique idéale pour venir présenter votre expérience professionnelle, le planning de votre évènement, l'histoire de votre association, de votre projet…",
+  "tags":"moduleTag-text moduleTag-cv moduleTag-animated",
+  "hidden" : false,
+  "fields": {
+    "date0": {
+      "type": "text",
+      "value": "<p>Mars 2015 - Avril 2016</p>"
+    },
+    "title0": {
+      "type": "text",
+      "value": "<p>Cuisinier</p>"
+    },
+    "content0": {
+      "type": "text",
+      "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, nulla pariatur quo saepe sequi sint, vitae voluptates volu</p>"
+    },
+    "date1": {
+      "type": "text",
+      "value": "<p>Mars 2014 - Avril 2015</p>"
+    },
+    "title1": {
+      "type": "text",
+      "value": "<p>pâtissier</p>"
+    },
+    "content1": {
+      "type": "text",
+      "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, nulla pariatur quo saepe sequi sint, vitae voluptates volu</p>"
+    },
+    "date2": {
+      "type": "text",
+      "value": "<p>Mars 2013 - Avril 2014</p>"
+    },
+    "title2": {
+      "type": "text",
+      "value": "<p>Cuisinier</p>"
+    },
+    "content2": {
+      "type": "text",
+      "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, nulla pariatur quo saepe sequi sint, vitae voluptates volu</p>"
+    },
+    "date3": {
+      "type": "text",
+      "value": ""
+    },
+    "title3": {
+      "type": "text",
+      "value": "<p>Cuisinier</p>"
+    },
+    "content3": {
+      "type": "text",
+      "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. In?Lorem ipsum dolor sit amet, nulla pariatur quo saepe sequi sint, vitae voluptates volu</p>"
+    }
+  }
+}

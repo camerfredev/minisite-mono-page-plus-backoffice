@@ -1,0 +1,20 @@
+{
+  "siteDomain": "framasite",
+  "siteLabel": "framasite",
+  "admins": [
+    {
+      "user_id": "admin",
+      "password": "$2y$10$YdZUMFyqbodXexkIzLB7VuGP6qq2KSMmyFn.IdmDcptRnVYd7PliS"
+    },
+    {
+      "user_id": "admin2",
+      "password": "$2y$10$YdZUMFyqbodXexkIzLB7VuGP6qq2KSMmyFn.IdmDcptRnVYd7PliS"
+    }
+  ],
+  "siteLang": "fr_FR",
+  "siteDescription": "Site r\u00e9alis\u00e9 avec FramaSite",
+  "siteKeywords": "site, internet, CMS, framasite"
+}
+
+
+

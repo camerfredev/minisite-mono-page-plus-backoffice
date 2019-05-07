@@ -1,0 +1,148 @@
+<div class="relative module" style=" height: 75vh">
+	<check if="{{ @isAdminPage }}">
+		<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn modal-trigger" href="#editBtnVideobgModal-{{@id}}" data-position="right"
+		   data-delay="250" data-tooltip="Choisir la vidéo d'arrière plan" style=" left: 50px; top: 50px; z-index: 1000">
+			<i class="material-icons">play_circle_filled</i></a>
+
+	</check>
+	<div class="video-background">
+		<div class="video-foreground">
+			<div class="Videobg-container" id="VideobgContainer-{{@id}}">
+				<check if="{{ @fields['VideobgType']['value'] == 'youtube'}}">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/{{@fields['VideobgId']['value']}}?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist={{@fields['VideobgId']['value']}}" frameborder="0" allowfullscreen></iframe>
+				</check>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="screen {{@fields['filter']['value']}}" style="   z-index: -10 " id="VideobgFilter-{{@id}}"></div>
+	<div class="relative" style="bottom: 0; height: 85vh; width: 100%">
+
+		<div class=" absolute btnVideoDesignContainer" style="">
+			<div class="row">
+
+				<div class="col s12  contrasted-color title-font editable right-align" id="moduleValue-title" style="text-align: justify; margin-bottom: 00px !important; font-size: 130%">
+					{{@fields['title']['value'] | raw}}
+				</div>
+				<div class="col s12  contrasted-color main-font editable right-align" id="moduleValue-text" style="text-align: justify; margin-bottom: 00px !important; font-size: 130%">
+					{{@fields['text']['value'] | raw}}
+				</div>
+
+			</div>
+			<div class="row right-align relative">
+				<span class="relative" style="width: content-box">
+					<check if="{{ @isAdminPage }}">
+						<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn modal-trigger" href="#editBtnModal-{{@id}}" data-position="right"
+						   data-delay="250" data-tooltip="Paramètres du bouton" style=" right: -20px; top: -50px; z-index: 1000">
+							<i class="material-icons">settings</i></a>
+
+					</check>
+					<a target="_blank" class="btn-large contrasted-color  waves-effect waves-light" id="btnModuleBtn-{{@id}}" href="{{@fields['btnValue']['value']}}"
+					   style="border: 2px solid  {{@siteOptions['theme']['contrasted_color']}} !important; margin: 0 30px; background-color: transparent; box-shadow: none !important;"><b>{{@fields['btnLabel']['value']}}</b></a>
+
+				</span>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+<check if="{{ @isAdminPage }}">
+	<div id="editBtnModal-{{@id}}" class="editBtnModal modal modal-fixed-header small-modal">
+		<div class="modal-header" style="z-index: 6001">
+			<h5 class="white-text" style="padding: 15px !important; margin: 0 !important;">Configuration du Bouton</h5>
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text">clear</i></a>
+		</div>
+		<div class="modal-content ">
+			<div class="row">
+				<p class="grey-text col s12 m10 offset-m1 l8 offset-l2"><i>Utilisez le bouton pour renvoyer vers un
+					autre site internet ou vers un fichier hébergé avec un système de cloud.</i></p>
+			</div>
+			<form class="editBtnForm" id="editBtnForm-{{@id}}">
+				<div class="row" style="margin-top: 30px">
+					<div class="input-field col s12 m10 offset-m1 l8 offset-l2">
+						<input name="label" type="text" required class="validate grey-text text-darken-3" value="{{@fields['btnLabel']['value'] }}">
+						<label for="label">Texte du bouton</label>
+					</div>
+				</div>
+				<div class="row" style="margin-top: 30px">
+					<div class="input-field col s12 m10 offset-m1 l8 offset-l2">
+						<input name="value" type="text" required class="validate grey-text text-darken-3" value="{{@fields['btnValue']['value'] }}">
+						<label for="value">Lien vers lequel renvoie le bouton</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 center-align">
+						<button type="submit" class="btn frama-orange hover-frama-purple waves-effect waves-light btn">
+							<i class="material-icons right">done</i>Valider
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="editBtnVideobgModal-{{@id}}" class="editBtnVideobgModal modal modal-fixed-header ">
+		<div class="modal-header" style="z-index: 6001">
+			<h5 class="white-text" style="padding: 15px !important; margin: 0 !important;">Choix de la vidéo d'arrière plan</h5>
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text">clear</i></a>
+		</div>
+		<div class="modal-content ">
+			<div class="row valign-wrapper tooltipped frama-purple shadow-bottom" data-position="bottom"
+				 data-delay="250" data-tooltip="Copiez l'adresse de votre vidéo dans la barre d'adresse" style="padding: 15px; border-radius: 5px; ">
+				<div class="col s2">
+					<i class="material-icons white-text medium">content_cut</i></p>
+				</div>
+				<div class="col s10 no-padding">
+					<img class="responsive-img no-padding no-margin" style="border-radius: 4px" src="app/views/modules/video/capture.png" alt="capture d'écran youtube">
+				</div>
+			</div>
+
+
+			<form class="editBtnVideobg" id="editBtnVideobg-{{@id}}">
+				<div class="row " style="margin-top: 30px">
+					<p class="frama-purple-text center-align">Seules les vidéos de <b>Youtube</b> fonctionnent actuellement
+						pour ce module</p>
+
+					<div class="input-field displaynone">
+
+						<select name="VideobgFilter">
+							<option value="filter-grille" selected>Grille</option>
+							<option value="filter-noScreen">Aucun</option>
+							<option value="filter-dark">Sombre</option>
+							<option value="filter-soft">Clair</option>
+							<option value="filter-blue">Bleu</option>
+							<option value="filter-orange">Orange</option>
+							<option value="filter-red">Rouge</option>
+							<option value="filter-green">Vert</option>
+						</select>
+						<label>Sélectionnez un filtre</label>
+					</div>
+					<div class="input-field col s12 ">
+						<input name="VideobgUrl" type="url" required class="validate grey-text text-darken-3 " value="https://www.youtube.com/watch?v={{@fields['VideobgId']['value']}}">
+						<label for="value">Collez l'dresse de votre vidéo Youtube <b>ici</b></label>
+					</div>
+
+				</div>
+				<h6 class="grey-text text-darken-2">Choisir un filtre à appliquer à votre vidéo</h6>
+				<div class="row center-align">
+
+					<repeat group="{{ ['filter-noScreen','filter-grille','filter-dark','filter-soft','filter-blue','filter-orange','filter-red','filter-green'] }}" value="{{ @filter }}">
+						<div class="relative selectFilter {{@filter == 'filter-grille' ? 'border-orange' : '' }}" style=" cursor:pointer; display: inline-block;overflow: hidden ; width: 60px; height: 60px; margin: 2px" id="selectFilter-{{@id}}-{{@filter}}">
+							<div class="absolute {{@filter}}" style="z-index: 6000; top: 0; bottom: 0; right: 0; left: 0; height: auto "></div>
+							<img src="app/views/modules/videobg/picture.png" class="responsive-img" style="z-index: -15" alt="">
+						</div>
+					</repeat>
+				</div>
+				<div class="row">
+					<div class="col s12 center-align">
+						<button type="submit" class="btn frama-orange hover-frama-purple waves-effect waves-light btn">
+							<i class="material-icons right">done</i>Valider
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</check>

@@ -1,0 +1,96 @@
+<div class="main-background">
+
+	<div class="container module ">
+
+		<div class="section relative" style="padding : 0 !important;">
+			<check if="{{ @isAdminPage }}">
+				<div class="row no-margin"><p class="infoModule white-text no-margin relative center-align"
+											  style="font-size: small; width : 100%; ">
+					<i>Seul les champs avec une date complétée seront visibles</i>
+				</p></div>
+			</check>
+			<repeat group="{{ [0,1,2,3] }}" value="{{ @index }}">
+				<check if="{{ @fields['date'.@index]['value'] || @isAdminPage }}">
+
+					<check if="{{ @index%2 === 0 }}">
+						<true>
+							<div class="row no-margin relative valign-wrapper">
+								<div class="col s6  " style="padding: 20px 0">
+									<div class="row no-margin ">
+										<div class="col s12 m8 offset-m2 l6 offset-l3 ">
+
+											<div class="showOnScrollRight right-align second-background second-color relative center-align center-align light-shadow" id="showOnScroll-{{@index}}-{{@id}}" style="padding: 10px ; border-radius: 10px;left: -1500px ">
+												<div class="editable main-font " id="moduleValue-date{{@index}}">
+													{{@fields['date'.@index]['value'] | raw}}
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="second-background absolute light-shadow" style="width: 4px; height: 100%; right: 50%; margin-right: -2px"></div>
+								<div class="second-background absolute light-shadow valign-wrapper"
+									 style="height: 40px; width: 40px; top: 50%; right: 50%; border-radius: 50%; margin: -20px -20px 0 0 ">
+									<i class="center-align small material-icons second-color relative" style="left: 5px;">av_timer</i>
+								</div>
+								<div class="col s6  " style="padding: 30px 0px 15px 50px !important;">
+									<div class="row no-margin">
+										<div class=" second-color title-font editable center-align" id="moduleValue-title{{@index}}" style="margin: -35px 0px !important;">
+											{{@fields['title'.@index]['value'] | raw}}
+										</div>
+									</div>
+									<div class="row no-margin">
+										<div class=" main-color main-font editable center-align" id="moduleValue-content{{@index}}">
+											{{@fields['content'.@index]['value'] | raw}}
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</true>
+						<false>
+							<div class="row no-margin relative valign-wrapper">
+								<div class="col s6  " style="padding: 30px 50px 15px 0px !important;">
+									<div class="row no-margin">
+										<div class=" second-color title-font editable center-align" id="moduleValue-title{{@index}}" style="margin: -35px 0px !important;">
+											{{@fields['title'.@index]['value'] | raw}}
+										</div>
+									</div>
+									<div class="row no-margin">
+										<div class=" main-color main-font editable center-align" id="moduleValue-content{{@index}}">
+											{{@fields['content'.@index]['value'] | raw}}
+										</div>
+									</div>
+
+								</div>
+								<div class="col s6  " style="padding: 10px 0">
+									<div class="row no-margin ">
+										<div class="col s12 m8 offset-m2 l6 offset-l3">
+											<div class="showOnScrollLeft right-align second-background second-color center-align relative center-align light-shadow" id="showOnScroll-{{@index}}-{{@id}}" style="padding: 10px ; border-radius: 10px;left: +1500px ">
+												<div class="editable main-font" id="moduleValue-date{{@index}}">
+													{{@fields['date'.@index]['value'] | raw}}
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="second-background absolute light-shadow" style="width: 4px; height: 100%; right: 50%; margin-right: -2px"></div>
+								<div class="second-background absolute light-shadow valign-wrapper"
+									 style="height: 40px; width: 40px; top: 50%; right: 50%; border-radius: 50%; margin: -20px -20px 0 0 ">
+									<i class="center-align small material-icons second-color relative" style="left: 5px;">av_timer</i>
+								</div>
+
+							</div>
+						</false>
+					</check>
+
+				</check>
+
+			</repeat>
+
+		</div>
+	</div>
+</div>

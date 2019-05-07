@@ -1,0 +1,133 @@
+{
+  "name": "gallery",
+  "title": "Galerie",
+  "description": "Module permettant de présenter jusqu'a 30 images sous forme d'un portfolio",
+  "tags": "moduleTag-img moduleTag-animated",
+  "hidden" : false,
+  "fields": {
+    "title": {
+      "type": "text",
+      "value": "<h5>Galerie</h5>"
+    },
+    "imgUrl0": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_2.jpg"
+    },
+    "imgUrl1": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_10.jpg"
+    },
+    "imgUrl2": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_13.jpg"
+    },
+    "imgUrl3": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_17.jpg"
+    },
+    "imgUrl4": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_16.jpg"
+    },
+    "imgUrl5": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl6": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl7": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl8": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl9": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl10": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl11": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl12": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl13": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl14": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl15": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl16": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl17": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl18": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl19": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl20": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl21": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl22": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl23": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl24": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl25": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl26": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl27": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl28": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl29": {
+      "type": "text",
+      "value": ""
+    }
+  }
+}

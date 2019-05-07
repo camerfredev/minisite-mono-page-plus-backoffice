@@ -1,0 +1,38 @@
+<div id="helpModal" class="modal modal-fixed-header big-modal" style="background-color: rgba(255,255,255,0.90) !important; bottom: 5% !important;">
+	<div class="modal-header">
+		<h5 class="white-text" style="padding: 15px !important; margin: 0 !important;">Aide</h5>
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text">clear</i></a>
+	</div>
+	<div class="modal-content no-padding">
+
+		<div class="row  no-margin">
+			<div class="col s12 no-padding">
+				<ul class="tabs .tabs-fixed-width  shadow-bottom" id="helpTabs" style="z-index: 6000">
+					<li class="tab col s3"><a class="frama-orange-text" id="help-discover-tab" href="#help-discover">Découvrir
+						Framasite</a></li>
+					<li class="tab col s3"><a class="frama-orange-text" id="help-structure-tab" href="#help-structure">Structure
+						du site</a></li>
+					<li class="tab col s3"><a class="frama-orange-text" id="help-content-tab" href="#help-content">Editer
+						le contenu</a></li>
+					<li class="tab col s3"><a class="frama-orange-text" id="help-perso-tab" href="#help-perso">Personnaliser
+						l'affichage</a></li>
+				</ul>
+			</div>
+			<div class="row" style="margin-bottom: 50px"></div>
+			<div id="help-discover" class="col s12">
+				<include href="./base/helpBtn/discover.htm"/>
+			</div>
+			<div id="help-structure" class="col s12">
+				<include href="./base/helpBtn/structure.htm"/>
+			</div>
+			<div id="help-content" class="col s12">
+				<include href="./base/helpBtn/editContent.htm"/>
+			</div>
+			<div id="help-perso" class="col s12">
+				<include href="./base/helpBtn/perso.htm"/>
+			</div>
+		</div>
+
+	</div>
+
+</div>

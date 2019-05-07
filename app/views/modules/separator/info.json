@@ -1,0 +1,9 @@
+{
+  "name": "separator",
+  "title": "barre de séparation",
+  "description": "Module permettant d'ajouter une barre de séparation",
+  "tags":"moduleTag-special",
+  "hidden" : false,
+  "fields": {
+  }
+}

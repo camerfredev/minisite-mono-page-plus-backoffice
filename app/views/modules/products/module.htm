@@ -1,0 +1,49 @@
+<div class="main-background">
+	<check if="{{ @isAdminPage }}">
+		<div class="row infoModule no-margin">
+			<p class=" white-text no-margin relative center-align"
+			   style="font-size: small;">
+				<i>Seuls les items avec le texte ou le prix complétés seront visibles par vos visiteurs</i>
+			</p>
+		</div>
+	</check>
+	<div class="container module">
+		<div class="section" style="padding-top: 40px !important;padding-bottom: 40px !important;">
+
+			<!--   Icon Section   -->
+			<div class="row" style="margin-top: 0; margin-bottom: 20px !important;">
+				<div class="col s12 l6 offset-l3  ">
+					<div class=" second-color title-font editable center-align" id="moduleValue-title">
+						{{@fields['title']['value'] | raw}}
+					</div>
+				</div>
+			</div>
+			<div class="row center-align">
+				<repeat group="{{ [1,2,3] }}" value="{{ @index }}">
+					<check if="{{ @fields['content'.@index]['value'] || @fields['price'.@index]['value']   || @isAdminPage}}">
+						<div class="three-block ">
+							<div class="icon-block center-align" style="width: 100% ; text-align: center">
+								<div class="relative row">
+									<check if="{{ @isAdminPage }}">
+										<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn editProductImage" data-position="right"
+										   data-delay="250" data-tooltip="modifier l'image. Taille recommandée : 400x300px" id="editProducImage-{{@id}}-{{@index}}" style=" right: -25px; top: -35px;; z-index: 1000">
+											<i class="material-icons">image</i>
+										</a>
+									</check>
+									<img src="{{@fields['imgUrl'.@index]['value']}}" id="moduleValue-imgUrl{{@index}}" class="responsive-img center-align " alt="{{@fields['imgUrl'.@index]['value'] | imgAlt}}">
+								</div>
+								<div class=" main-color main-font editable center-align" id="moduleValue-content{{@index}}">
+									{{@fields['content'.@index]['value']| raw}}
+								</div>
+								<div class="second-color main-font editable center-align" id="moduleValue-price{{@index}}">
+									{{@fields['price'.@index]['value']| raw}}
+								</div>
+							</div>
+						</div>
+					</check>
+				</repeat>
+			</div>
+
+		</div>
+	</div>
+</div>

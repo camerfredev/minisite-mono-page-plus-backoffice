@@ -1,0 +1,25 @@
+{
+  "name": "calendar",
+  "title": "Calendrier",
+  "description": "Module permettant d'ajouter un agenda Framagenda ou Google agenda",
+  "tags":"moduleTag-special",
+  "hidden": false,
+  "fields": {
+    "agendaType": {
+      "type": "text",
+      "value": "google calendar"
+    },
+    "agendaId": {
+      "type": "text",
+      "value": "h8q8447s6ndcpn4bjsulob6egs%40group.calendar.google.com&ctz=Europe%2FParis"
+    },
+    "title": {
+      "type": "text",
+      "value": "<h4>Agenda</h4>"
+    },
+    "content": {
+      "type": "text",
+      "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam </p>"
+    }
+  }
+}

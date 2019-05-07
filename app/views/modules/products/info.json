@@ -1,0 +1,49 @@
+{
+  "name": "products",
+  "title": "Nos Produits",
+  "description": "Module permettant de présenter trois de vos produits",
+  "tags":"moduleTag-text moduleTag-img",
+  "hidden" : false,
+  "fields": {
+    "title": {
+      "type": "text",
+      "value": "<h4>Explorez les possibilités de votre site !</h4>"
+    },
+    "imgUrl1": {
+      "type": "text",
+      "value": "app/views/modules/products/products.jpg"
+    },
+    "content1": {
+      "type": "text",
+      "value": "<h5>Des modules pour tout vos besoins</h5><p> A placer, à déplacer, à modifier en rédigeant vos textes, en ajoutant vos photos et vos images</p>"
+    },
+    "price1": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl2": {
+      "type": "text",
+      "value": "app/views/modules/products/products.jpg"
+    },
+    "content2": {
+      "type": "text",
+      "value": "<h5>Des thèmes graphiques</h5><p>Vous pouvez modifier les couleurs de texte et les couleurs de fond, soyez plein d’imagination !</p>"
+    },
+    "price2": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl3": {
+      "type": "text",
+      "value": "app/views/modules/products/products.jpg"
+    },
+    "content3": {
+      "type": "text",
+      "value": "<h5>Des jeux de polices de caractères</h5><p>Pour tous les styles, classiques ou plus fantaisistes</p>"
+    },
+    "price3": {
+      "type": "text",
+      "value": ""
+    }
+  }
+}

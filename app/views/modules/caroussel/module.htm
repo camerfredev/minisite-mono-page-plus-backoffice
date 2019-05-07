@@ -1,0 +1,56 @@
+<div class=" module ">
+	<check if="{{ @isAdminPage }}">
+		<div class="row infoModule" style="margin: 0  !important;">
+			<p class=" white-text no-margin relative center-align"
+			   style="font-size: small;">
+				<i>Seules les images complétées seront visibles par vos visiteurs</i>
+			</p>
+		</div>
+	</check>
+
+	<div class="section no-padding relative main-background valign-wrapper">
+
+		<check if="{{ @isAdminPage }}">
+
+			<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn  prevCaroussel" data-position="left"
+			   data-delay="250" data-tooltip="Slide précedent" style=" left: 35%; bottom: 50px; z-index: 1000">
+				<i class="material-icons">chevron_left</i></a>
+			<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn nextCaroussel" data-position="right"
+			   data-delay="250" data-tooltip="Slide suivant" style=" right: 35%; bottom:  50px; z-index: 1000">
+				<i class="material-icons">chevron_right</i></a>
+		</check>
+
+		<div class="carousel carousel-slider center" data-indicators="true" style="max-height: 100vh; overflow: hidden">
+			<repeat group="{{ ['#one!','#two!','#three!','#four!','#five!', '#six!','#seven!','#height!'] }}" key="{{@key}}" value="{{ @value }}">
+				<check if="{{ @fields['imgUrl'.@key]['value'] || @isAdminPage }}">
+				<div class="carousel-item white-text " href="{{@value}}">
+
+							<img class="absolute " id="moduleValue-imgUrl{{@key}}" src="{{@fields['imgUrl'.@key]['value']? @fields['imgUrl'.@key]['value'] : 'app/views/modules/caroussel/default.png'}}" alt="{{@fields['imgUrl'.@key]['value'] | imgAlt}}" style="width: 100% ; height: auto; top: 0; right: 0">
+
+					<check if="{{ @isAdminPage }}">
+						<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn editCarousselImage" data-position="right"
+						   data-delay="250" data-tooltip="modifier l'image - Taille recommandée : 1900x1000px" id="editCarousselImage-{{@id}}-{{@key}}" style=" left: 100px; top: 100px; z-index: 1000">
+							<i class="material-icons">image</i></a>
+						<check if="{{ @fields['imgUrl'.@key]['value']}}">
+							<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn removeCarousselImage" data-position="right"
+							   data-delay="250" data-tooltip="retirer l'image - le slide ne sera plus affiché" id="removeCarousselImage-{{@id}}-imgUrl{{@key}}" style=" left: 150px; top: 100px; z-index: 1000">
+								<i class="material-icons">clear</i></a>
+						</check>
+
+					</check>
+					<div class=" relative " style="top: 45% ">
+						<div class="container ">
+							<div class=" row center contrasted-color title-font editable " id="moduleValue-text{{@key}}" style="font-size: 130%">
+								{{@fields['text'.@key]['value'] | raw}}
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+				</check>
+			</repeat>
+		</div>
+	</div>
+</div>

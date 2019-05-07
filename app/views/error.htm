@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<include href="./base/includes/head.htm" />
+<body>
+{* ajout des boutons supérieurs si l'utilisateur est connecté en tant qu'admin*}
+<include if="{{ @isAdmin }}" href="./base/includes/adminButtons.htm" />
+
+
+<include href="./base/nav/nav.htm" />
+
+
+<div class="row" style="min-height: 100vh; padding-top: 50px;">
+<h3 class="center-align">Une Erreur s'est produite</h3>
+	<a href="/" class="center-align"><h5>Retour à la page d'accueil</h5></a>
+
+	<div class="row" style="margin-top: 50px !important;">
+		<div class="col s12 m6 offset-m3 l4 offset-l4">
+			<h6 class="center-align"><b>Cette page est affichée car :</b></h6>
+			<ul>
+				<li>- Vous avez plusieurs onglets ouvert sur le meme site et cela déclenche une sécurité qui affiche une erreur</li>
+				<li>- Quelqu'un édite en meme temps que vous ce site</li>
+				<li>- Votre session etait arrivée à expiration</li>
+				<li>- une mise à jour viens d'avoir lieu sur le serveur</li>
+			</ul>
+			<h6 class="center-align"><b>Pensez à sauvegarder votre travail régulièrement</b></h6>
+		</div>
+	</div>
+
+</div>
+
+
+<include href="./base/footer/footer.htm" />
+
+
+<!--  Scripts-->
+<include href="./base/includes/scripts.htm" />
+
+</body>
+</html>

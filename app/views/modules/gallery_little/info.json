@@ -1,0 +1,413 @@
+{
+  "name": "gallery_little",
+  "title": "Galerie petites colonnes",
+  "description": "Module permettant de presenter jusqu'a 100 images sous forme d'un portfolio",
+  "tags": "moduleTag-img moduleTag-animated",
+  "hidden" : false,
+  "fields": {
+    "title": {
+      "type": "text",
+      "value": "<h5>Galerie</h5>"
+    },
+    "imgUrl0": {
+      "type": "text",
+      "value": "app/views/modules/gallery/aquarelle_2.jpg"
+    },
+    "imgUrl1": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl2": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl3": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl4": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl5": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl6": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl7": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl8": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl9": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl10": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl11": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl12": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl13": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl14": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl15": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl16": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl17": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl18": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl19": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl20": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl21": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl22": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl23": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl24": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl25": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl26": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl27": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl28": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl29": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl30": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl31": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl32": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl33": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl34": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl35": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl36": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl37": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl38": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl39": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl40": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl41": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl42": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl43": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl44": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl45": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl46": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl47": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl48": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl49": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl50": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl51": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl52": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl53": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl54": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl55": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl56": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl57": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl58": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl59": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl60": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl61": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl62": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl63": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl64": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl65": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl66": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl67": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl68": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl69": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl70": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl71": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl72": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl73": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl74": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl75": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl76": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl77": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl78": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl79": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl80": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl81": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl82": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl83": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl84": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl85": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl86": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl87": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl88": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl89": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl90": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl91": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl92": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl93": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl94": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl95": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl96": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl97": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl98": {
+      "type": "text",
+      "value": ""
+    },
+    "imgUrl99": {
+      "type": "text",
+      "value": ""
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "video",
+  "title": "Vidéo",
+  "description": "Module permettant d'ajouter une vidéo hébergée sur Peertube, Youtube ou autre",
+  "tags":"moduleTag-video moduleTag-text",
+  "hidden": false,
+  "fields": {
+    "videoType": {
+      "type": "text",
+      "value": "youtube"
+    },
+    "videoId": {
+      "type": "text",
+      "value": "5lASkq5RWNE"
+    },
+    "title": {
+      "type": "text",
+      "value": "<h4 style=\"text-align:center;\">Besoin d'aide avant de vous lancer dans la création de votre page? </h4>"
+    },
+    "content": {
+      "type": "text",
+      "value": "<p>Cette vidéo tutoriel vous guidera dans vos premiers pas avec Noemie CMS</p>"
+    },
+    "instance": {
+      "type": "text",
+      "value": "peertube.cpy.re"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "name": "competences",
+  "title": "Compétences",
+  "description": "Module permettant de présenter vos compétences aux visiteurs",
+  "tags" : "moduleTag-special moduleTag-cv",
+  "hidden" : false,
+  "fields": {
+    "label0": {
+      "type": "text",
+      "value": "<p>aquarelle</p>"
+    },
+    "value0": {
+      "type": "text",
+      "value": "4"
+    },
+    "label1": {
+      "type": "text",
+      "value": ""
+    },
+    "value1": {
+      "type": "text",
+      "value": "2"
+    },
+    "label2": {
+      "type": "text",
+      "value": ""
+    },
+    "value2": {
+      "type": "text",
+      "value": "3"
+    },
+    "label3": {
+      "type": "text",
+      "value": ""
+    },
+    "value3": {
+      "type": "text",
+      "value": "3"
+    },
+    "label4": {
+      "type": "text",
+      "value": ""
+    },
+    "value4": {
+      "type": "text",
+      "value": "2"
+    },
+    "label5": {
+      "type": "text",
+      "value": ""
+    },
+    "value5": {
+      "type": "text",
+      "value": "3"
+    },
+    "label6": {
+      "type": "text",
+      "value": ""
+    },
+    "value6": {
+      "type": "text",
+      "value": "1"
+    },
+    "label7": {
+      "type": "text",
+      "value": ""
+    },
+    "value7": {
+      "type": "text",
+      "value": "2"
+    },
+    "label8": {
+      "type": "text",
+      "value": ""
+    },
+    "value8": {
+      "type": "text",
+      "value": "4"
+    },
+    "label9": {
+      "type": "text",
+      "value": ""
+    },
+    "value9": {
+      "type": "text",
+      "value": "5"
+    },
+    "label10": {
+      "type": "text",
+      "value": ""
+    },
+    "value10": {
+      "type": "text",
+      "value": "4"
+    },
+      "label11": {
+      "type": "text",
+      "value": ""
+    },
+    "value11": {
+      "type": "text",
+      "value": "0"
+    }
+  }
+}

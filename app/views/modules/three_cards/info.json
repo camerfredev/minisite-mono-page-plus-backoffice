@@ -1,0 +1,45 @@
+{
+  "name": "three_cards",
+  "title": "Cartes animées",
+  "description": "Module permettant de présenter trois élements avec image et texte de manière élégante",
+  "tags":"moduleTag-text moduleTag-animated moduleTag-img",
+  "hidden" : false,
+  "fields": {
+    "imgUrl1": {
+      "type": "text",
+      "value": "app/views/modules/three_cards/img.jpg"
+    },
+    "content1": {
+      "type": "text",
+      "value": "<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, </h6>"
+    },
+    "title1": {
+      "type": "text",
+      "value": "<p>Titre de la carte</p>"
+    },
+    "imgUrl2": {
+      "type": "text",
+      "value": "app/views/modules/three_cards/img.jpg"
+    },
+    "content2": {
+      "type": "text",
+      "value": "<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere,</h6>"
+    },
+    "title2": {
+      "type": "text",
+      "value": "<p>Titre de la carte</p>"
+    },
+    "imgUrl3": {
+      "type": "text",
+      "value": "app/views/modules/three_cards/img.jpg"
+    },
+    "content3": {
+      "type": "text",
+      "value": "<h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>"
+    },
+    "title3": {
+      "type": "text",
+      "value": "<p>Titre de la carte</p>"
+    }
+  }
+}

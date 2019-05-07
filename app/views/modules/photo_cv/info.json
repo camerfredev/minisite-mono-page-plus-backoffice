@@ -1,0 +1,21 @@
+{
+  "name": "photo_cv",
+  "title": "Section présentation",
+  "description": "Module permettant d'afficher une photo de profil accompagnée d'un texte, idéal pour un CV",
+  "tags":"moduleTag-text moduleTag-img moduleTag-cv",
+  "hidden" : false,
+  "fields": {
+    "imgUrl": {
+      "type": "text",
+      "value": "app/views/modules/photo_cv/default-profile.png"
+    },
+    "title": {
+      "type": "text",
+      "value": "<h5>\t\t\t\t\tModule de présentation</h5>"
+    },
+    "content": {
+      "type": "text",
+      "value": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto assumenda consequuntur esse eum facere, illum libero molestiae nam nihil nulla pariatur quo saepe sequi sint, vitae voluptates voluptatum. </p>\t\t\t\t"
+    }
+  }
+}

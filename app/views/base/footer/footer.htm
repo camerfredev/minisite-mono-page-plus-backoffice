@@ -1,0 +1,54 @@
+
+<section class="relative moduleSectionContainer module" id="footer">
+	<include if="{{ @isAdminPage }}" href="./base/editBtns/addSection.htm" with="reference=footer ,positionReference='before'"/>
+<footer class="page-footer second-background base ">
+	<div class="container main-color">
+		<div class="row">
+
+			<div class="col m12 l5 s12  relative" >
+				<div class="editable main-font second-color relative" id="moduleValue-leftText"  style="margin: 0 20px !important;">
+					{{@footer['fields']['leftText']['value'] | raw}}
+				</div>
+			</div>
+			<div class="col m8 l4 s12 relative " >
+
+				<div class="editable main-font  second-color relative" id="moduleValue-rightText" style="margin: 0 20px !important;" >
+					{{@footer['fields']['rightText']['value'] | raw }}
+				</div>
+			</div>
+			<div class="col m4 l3 s12">
+				<ul>
+					<li class="center-align"><a class=" modal-trigger white-text small-modal second-color main-font" href="#login-modal" style="text-decoration: underline !important;" >Connexion administrateur</a></li>
+					<div id="login-modal" class="modal modal-fixed-header " style=" height: 400px !important;">
+						<div class="modal-header" style="z-index: 6001">
+							<h5 class="white-text" style="padding: 15px !important; margin: 0 !important; color: white !important;">Connexion Administrateur</h5>
+							<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"><i class="material-icons white-text" style="color:white !important;">clear</i></a>
+						</div>
+						<div class="modal-content valign-wrapper center-align" style="padding-top: 90px">
+							<div class=" col m10 offset-m1 " style="padding: 20px !important;"  >
+
+								<div class="row">
+									<include href="./base/includes/loginForm.htm" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="" style="background-color: rgba(0,0,0,0.28)">
+		<div class="footer-copyright grey-text text-lighten-2 " >
+			<div class="container" style="font-size: 0.9em" >
+				Un des nombreux programmes … 
+				<a href="https://www.mezalab.org/" class="link-footer">Web3D</a>
+				par <a href="https://www.mezalab.org/" class="link-footer">Meza | <span class="link-it">Lab</span></a>… 
+				 <a href="https://twitter.com/meza_lab/likes" class="link-footer" >Likés sur Twitter</a> <br>
+		
+					</div>
+		</div>
+	</div>
+
+</footer>
+
+</section>

@@ -1,0 +1,58 @@
+<div class="main-background">
+	<check if="{{ @isAdminPage }}">
+		<div class="row infoModule no-margin">
+			<p class=" white-text no-margin relative center-align"
+			   style="font-size: small;">
+				<i>Seuls les cartes avec le titre ou le contenu textuel complétés seront visibles par vos visiteurs</i>
+			</p>
+		</div>
+	</check>
+	<div class="container module">
+		<div class="section" style="padding-top: 40px !important;padding-bottom: 40px !important;">
+
+			<!--   Icon Section   -->
+			<div class="row center-align">
+				<repeat group="{{ [1,2,3] }}" value="{{ @index }}">
+					<check if="{{  @fields['title'.@index]['value'] ||   @fields['content'.@index]['value']   || @isAdminPage}}">
+						<div class="three-block " style="border-radius: 4px !important; ">
+							<div class="icon-block center-align " style="width: 100% ; text-align: center; border-radius: 4px;">
+								<div class="card relative shadow-bottom" style="border-radius: 5px !important;">
+									<check if="{{ @isAdminPage }}">
+										<a class="btn-floating waves-effect waves-light lightButton absolute tooltipped moduleBtn editCardImage" data-position="right"
+										   data-delay="250" data-tooltip="modifier l'image. Taille recommandée : 400x300px" id="editCardImage-{{@id}}-{{@index}}" style=" right: -25px; top: -35px;; z-index: 1000">
+											<i class="material-icons">image</i>
+										</a>
+									</check>
+									<div class="card-image waves-effect waves-block waves-light ">
+										<img class="activator" src="{{@fields['imgUrl'.@index]['value']}}" id="moduleValue-imgUrl{{@index}}" alt="{{@fields['imgUrl'.@index]['value'] | imgAlt}}">
+									</div>
+									<div class="card-content relative second-background" style="padding: 10px">
+									<div class="card-title activator" style="margin: 0 !important; font-size: inherit !important; min-width: 60%; min-height: 80px !important;">
+										<span class=" title-font  second-color  editable " id="moduleValue-title{{@index}}" style="display: inline-block; text-align: left !important; max-width: 85% !important;">
+										{{@fields['title'.@index]['value']| raw}}
+										</span>
+										<i class="material-icons right  second-color ">
+										more_vert</i>
+									</div>
+									</div>
+									<div class="card-reveal second-background" style="overflow-x: hidden; opacity: 0.90 ; margin-top: -5px !important;">
+										<div class="card-title">
+											<i class="material-icons {{@isAdminPage?'left' : 'right' }} second-color ">close</i></span></div>
+
+										<div class="" style="padding: 20px 10px 10px 10px">
+											<div class=" second-color main-font editable center-align" id="moduleValue-content{{@index}}">
+												{{@fields['content'.@index]['value']| raw}}
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</check>
+				</repeat>
+			</div>
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<include href="./base/includes/head.htm" />
+<body>
+{* ajout des boutons supérieurs si l'utilisateur est connecté en tant qu'admin*}
+<include if="{{ @isAdmin }}" href="./base/includes/adminButtons.htm" />
+
+
+<include href="./base/nav/nav.htm" />
+
+
+<div class="row" style="min-height: 100vh; padding-top: 50px;">
+	<h5 class="grey-text text-darken-2 center-align" style="margin-top: 50px">Veuillez renseigner quelques informations pour initialiser votre site web</h5>
+	<check if="{{ @SESSION.signInPageMessage }}">
+		<div class="row">
+			<p class="frama-orange-text center-align">
+				{{@SESSION.signInPageMessage}}
+			</p>
+		</div>
+	</check>
+
+	<div class="col s12 m6 offset-m3">
+		<include  href="./base/includes/signInForm.htm" />
+	</div>
+</div>
+
+
+<include href="./base/footer/footer.htm" />
+
+
+<!--  Scripts-->
+<include href="./base/includes/scripts.htm" />
+
+</body>
+</html>

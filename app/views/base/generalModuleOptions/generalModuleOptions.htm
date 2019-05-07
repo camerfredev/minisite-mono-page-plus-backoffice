@@ -1,0 +1,25 @@
+<div class="fixed-action-btn toolbar absolute  show-on-section-hover">
+	<a class="btn-floating btn-large frama-orange hover-frama-purple generalMenuOptionsBtn tooltipped " data-position="left"
+	   data-delay="250" data-tooltip="Options du module" style="bottom: 10px !important;right: 10px!important;">
+		<i class="large material-icons">build</i>
+	</a>
+	<ul>
+		<li class="waves-effect waves-light tooltipped " data-position="bottom"
+			data-delay="250" data-tooltip="Supprimer le module">
+			<a href="{{'admin/edit/delete_section?id='. @id.'&CSRFToken='.@CSRFToken}}" ><i class="material-icons">delete</i></a>
+		</li>
+		<li class="waves-effect waves-light tooltipped " data-position="bottom"
+			data-delay="250" data-tooltip="Remonter le module">
+			<a href="{{'admin/edit/move_up?id='. @id.'&CSRFToken='.@CSRFToken.'&hash='.@id}}"><i class="material-icons">vertical_align_top</i></a>
+		</li>
+		<li class="waves-effect waves-light tooltipped " data-position="bottom"
+			data-delay="250" data-tooltip="Descendre le module">
+			<a href="{{'admin/edit/move_down?id='. @id.'&CSRFToken='.@CSRFToken.'&hash='.@id}}"><i class="material-icons">vertical_align_bottom</i></a>
+		</li>
+		<li class="waves-effect waves-light tooltipped " data-position="bottom"
+			data-delay="250" data-tooltip="Ajouter un raccourci au menu horizontal du haut de page">
+			<a class="modal-trigger white-text addToMenuBtn" id="addToMenuBtn-{{@id}}" href="#add-to-menu-modal">
+				<i class="material-icons">note_add</i></a>
+		</li>
+	</ul>
+</div>
